@@ -65,7 +65,7 @@
                 <div class="col mt-5 mt-md-0">
                     <div class="card h-100 p-2 p-md-5">
                         <img class="card-img img-fluid" src="/images/bookstore.png" alt="bookstore icon" />
-                        <div class="card-body mt-5 py-4 px-5">
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
                             <h5 class="card-title pt-3 pb-5">Bridging the Gap Between You & Bookstores</h5>
                             <p class="card-text pb-5">Visit multiple bookstores in one location.</p>
                         </div>
@@ -74,7 +74,7 @@
                 <div class="col mt-5 mt-md-0">
                     <div class="card h-100 p-2 p-md-5">
                         <img class="card-img img-fluid" src="/images/bookCommunity.png" alt="book community icon" />
-                        <div class="card-body mt-5 py-4 px-5">
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
                             <h5 class="card-title pt-3 pb-5">Books Are Best Enjoyed In Community</h5>
                             <p class="card-text pb-5">Learn about library programs in your area.</p>
                         </div>
@@ -83,7 +83,7 @@
                 <div class="col mt-5 mt-md-0">
                     <div class="card h-100 p-2 p-md-5">
                         <img class="card-img img-fluid" src="/images/authorTalk.png" alt="author talk icon" />
-                        <div class="card-body mt-5 py-4 px-5">
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
                             <h5 class="card-title pt-3 pb-5">Connect with Community</h5>
                             <p class="card-text pb-5">Participate in informal author talks and panels.</p>
                         </div>
@@ -92,22 +92,25 @@
             </div>
             <div class="row m-0 w-100 mt-4">
                 <div class="newsletter col-12">
-                    <p>More information coming soon. Want to receive updates?</p>
-                    <a class="primary-btn" href="#" target="_blank">Sign Up Now!</a>
+                    <!-- <p>More information coming soon. Want to receive updates?</p> -->
+                    <!-- <a class="primary-btn" href="https://stats.sender.net/forms/dJ69G9/view">Sign Up Now!</a> -->
+                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
                 </div>
             </div>
         </section>
 
         <!-- ---------- CONTACT US ---------- -->
-        <section id="contact" class="contact-container">
+        <section id="contact" class="contact-container inverted">
             <div class="email info-container">
-                <img class="email-image img-fluid" src="/images/icon_email.png" alt="envelope icon" />
+                <!-- <img class="email-image img-fluid" src="/images/icon_email.png" alt="envelope icon" /> -->
+                <img class="email-image img-fluid" src="/images/icon_email-dk.png" alt="envelope icon" />
                 <div class="email contact-info">
                     <a href="mailto:hello@mvbookbazaar.com"><p class="m-0">hello@mvbookbazaar.com</p></a>
                 </div>
             </div>
             <div class="phone info-container">
-                <img class="phone-image img-fluid" src="/images/icon_phone.png" alt="phone icon" />
+                <!-- <img class="phone-image img-fluid" src="/images/icon_phone.png" alt="phone icon" /> -->
+                <img class="phone-image img-fluid" src="/images/icon_phone-dk.png" alt="phone icon" />
                 <div class="phone contact-info">
                     <a href="tel:+13303609696"><p class="m-0">(330) 360-9696</p></a>
                 </div>
@@ -139,6 +142,25 @@
 
         <!-- BOOTSTRAP SCRIPTS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+        <!-- SENDER SCRIPS -->
+        <script>
+            (function (s, e, n, d, er) {
+                s["Sender"] = er;
+                ((s[er] =
+                    s[er] ||
+                    function () {
+                        (s[er].q = s[er].q || []).push(arguments);
+                    }),
+                    (s[er].l = 1 * new Date()));
+                var a = e.createElement(n),
+                    m = e.getElementsByTagName(n)[0];
+                a.async = 1;
+                a.src = d;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, "script", "https://cdn.sender.net/accounts_resources/universal.js", "sender");
+            sender("5e91f040d16206");
+        </script>
 
         <!-- CUSTOM SCRIPTS -->
         <!-- <script type="text/javascript" src="/app.js"></script> -->
