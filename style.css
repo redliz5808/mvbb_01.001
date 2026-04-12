@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'Champagne';
-    src: url('/assets/fonts/ChampagneAndLimousines.ttf');
+    font-family: "Champagne";
+    src: url("/assets/fonts/ChampagneAndLimousines.ttf");
 }
 
 @font-face {
-    font-family: 'Champagne';
-    src: url('/assets/fonts/ChampagneAndLimousinesBold.ttf');
+    font-family: "Champagne";
+    src: url("/assets/fonts/ChampagneAndLimousinesBold.ttf");
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Champagne';
-    src: url('/assets/fonts/ChampagneAndLimousinesItalic.ttf');
+    font-family: "Champagne";
+    src: url("/assets/fonts/ChampagneAndLimousinesItalic.ttf");
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Champagne-bold-italic';
-    src: url('/assets/fonts/ChampagneAndLimousinesBoldItalic.ttf');
+    font-family: "Champagne-bold-italic";
+    src: url("/assets/fonts/ChampagneAndLimousinesBoldItalic.ttf");
     font-style: italic;
     font-weight: 600;
 }
@@ -322,6 +322,15 @@ body {
     .hero-banner .accent-btn {
         margin-left: 0;
     }
+
+    .hero-banner h1 {
+        font-size: 3rem;
+        line-height: 3.81rem;
+    }
+
+    .hero-banner p {
+        font-size: 2.75rem;
+    }
 }
 /* ********** SECTION 1: OPTION A ********** */
 
@@ -438,6 +447,27 @@ body {
     font-family: var(--secondary-family);
 }
 
+@media screen and (max-width: 992px) {
+    #thanks.inverted {
+        padding: 2rem 1rem;
+    }
+
+    #thanks .heading {
+        padding-top: 3rem;
+        flex-direction: column;
+    }
+
+    #thanks .heading .title {
+        padding-left: 0;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    #thanks .thanks-list {
+        margin-top: 3rem;
+    }
+}
+
 /* ********** CONTACT US ********** */
 
 .contact-container {
@@ -538,7 +568,7 @@ body {
 
 footer {
     background-color: var(--primary);
-        color: var(--secondary-font);
+    color: var(--secondary-font);
 }
 
 footer .tagline {
