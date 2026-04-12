@@ -1,14 +1,39 @@
+@font-face {
+    font-family: 'Champagne';
+    src: url('/assets/fonts/ChampagneAndLimousines.ttf');
+}
+
+@font-face {
+    font-family: 'Champagne';
+    src: url('/assets/fonts/ChampagneAndLimousinesBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Champagne';
+    src: url('/assets/fonts/ChampagneAndLimousinesItalic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Champagne-bold-italic';
+    src: url('/assets/fonts/ChampagneAndLimousinesBoldItalic.ttf');
+    font-style: italic;
+    font-weight: 600;
+}
+
 :root {
     --white: #fffbff;
     --black: #000320;
 
-    --primary: #5fa8d3;
+    --primary: #665d60;
     --contrast: #fffbff;
-    --secondary: #7a5980;
+    --secondary: var(--black);
     --dark: var(--black);
-    --accent: #5fa8d3;
+    --accent: #adc2d1;
 
-    --primary-family: "Inter", sans-serif;
+    --primary-family: "Champagne", sans-serif;
+    --secondary-family: "Inter", sans-serif;
     --primary-font: var(--black);
     --secondary-font: var(--white);
 
@@ -21,6 +46,7 @@
 body {
     background-color: var(--dark);
     font-family: var(--primary-family);
+    font-size: 1.15rem;
 }
 
 .primary-btn {
@@ -63,7 +89,8 @@ body {
 
 .accent-btn {
     border-radius: var(--primary-radius);
-    background-color: var(--contrast);
+    background-color: var(--accent);
+    font-family: var(--secondary-family);
     color: var(--primary-font);
     font-size: 1.25rem;
     outline: 0;
@@ -76,8 +103,8 @@ body {
 }
 
 .accent-btn:hover {
-    background-color: var(--accent);
-    color: var(--white);
+    background-color: var(--contrast);
+    color: var(--dark);
 }
 
 .primary-text {
@@ -88,13 +115,15 @@ body {
     color: var(--accent);
 }
 
+.text-bold {
+    font-weight: 600;
+}
+
 @media screen and (max-width: 992px) {
     .accent-btn {
         padding: 0.75rem 3.38rem;
     }
 }
-
-/* ********** MAIN NAV ********** */
 
 .header {
     display: flex;
@@ -102,6 +131,8 @@ body {
     min-height: 100vh;
     padding: 1.15rem 4rem;
 }
+
+/* ********** MAIN NAV ********** */
 
 #mainNav {
     transition: all 0.3s ease-in-out;
@@ -129,7 +160,7 @@ body {
 
 .main-nav .nav-link {
     color: var(--secondary-font);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: var(--primary-family);
 }
 
@@ -216,13 +247,13 @@ body {
 
     .main-nav .navbar-toggler-icon {
         color: var(--dark);
-        background-image: url(/images/icon_menu.png);
+        background-image: url(/assets/images/icon_menu.png);
         height: 1.25rem;
         width: 1.25rem;
     }
 
     .main-nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-        background-image: url(/images/icon_menu-close-bk.png);
+        background-image: url(/assets/images/icon_menu-close-bk.png);
     }
 }
 
@@ -242,13 +273,10 @@ body {
     align-items: center;
 }
 
-.hero-banner h1 {
-    text-align: center;
-}
-
 .hero-banner h1,
 .hero-banner p {
     color: var(--accent);
+    text-align: center;
     /* max-width: 28.81rem; */
 }
 
@@ -260,18 +288,24 @@ body {
 
 .hero-banner h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.75rem;
     line-height: 4.81rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .hero-banner p {
-    font-size: 1.5rem;
+    font-size: 3.25rem;
     margin-bottom: 4.38rem;
+    color: var(--secondary-font);
+}
+
+.hero-banner p.date {
+    font-weight: 600;
 }
 
 .hero-banner .accent-btn {
     display: inline-block;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -322,10 +356,12 @@ body {
     font-size: 2rem;
     font-weight: 700;
     min-height: 256px;
+    font-family: var(--secondary-family);
 }
 
 .section-one .card-body .card-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-family: var(--secondary-family);
 }
 
 .section-one .newsletter {
@@ -357,6 +393,51 @@ body {
     }
 }
 
+/* ********** SPECIAL THANKS ********** */
+
+#thanks.inverted {
+    background-color: var(--white);
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#thanks .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* #thanks .heading .img-container,
+#thanks .heading .title {
+    width: 50%;
+} */
+
+#thanks .heading .title {
+    /* text-align: center; */
+    padding-left: 3.5rem; /* Remove when adding more thanks */
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-right: 7rem;
+}
+
+#thanks .heading .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thanks .heading img {
+    max-height: 6rem;
+}
+
+#thanks .thanks-list {
+    font-family: var(--secondary-family);
+}
+
 /* ********** CONTACT US ********** */
 
 .contact-container {
@@ -365,6 +446,7 @@ body {
     align-items: center;
     background-color: var(--transparent);
     padding: 4.83rem 10rem;
+    font-family: var(--secondary-family);
 }
 
 .contact-container.inverted {
@@ -456,7 +538,7 @@ body {
 
 footer {
     background-color: var(--primary);
-    color: var(--primary-font);
+        color: var(--secondary-font);
 }
 
 footer .tagline {
