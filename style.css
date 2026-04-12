@@ -299,10 +299,6 @@ body {
     color: var(--secondary-font);
 }
 
-.hero-banner p.save-the-date {
-    
-}
-
 .hero-banner p.date {
     font-weight: 600;
 }
