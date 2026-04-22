@@ -387,7 +387,7 @@ body {
     color: var(--secondary-font);
 }
 
-.section-one #app {
+.section-one #app .app-inner {
     padding-left: 5rem;
 }
 
@@ -429,6 +429,14 @@ body {
 
     .section-one .card-img {
         margin-top: 1.25rem;
+    }
+
+    .section-one #app {
+        flex-direction: column;
+    }
+
+    .section-one #app .app-inner {
+        padding-left: 1.5rem;
     }
 
     .section-one .newsletter {
@@ -497,6 +505,8 @@ body {
 
     #thanks .thanks-list {
         margin-top: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -678,10 +688,15 @@ footer .designer-credit {
     footer .info {
         text-align: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
         margin: 0;
+    }
+
+    footer .connections {
+        align-items: center;
     }
 
     footer .tagline {
@@ -694,6 +709,6 @@ footer .designer-credit {
     }
 
     footer .legal-links {
-        font-size: 0.8rem;
+        font-size: 1.15rem;
     }
 }

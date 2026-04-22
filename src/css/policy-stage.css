@@ -55,3 +55,11 @@
 .policy footer {
     font-family: var(--primary-family);
 }
+
+@media screen and (max-width: 992px) {
+    
+
+.policy .privacy .policy-container {
+    padding: 1rem 1rem 8rem 1rem;
+}
+}
