@@ -33,7 +33,7 @@
     --accent: #adc2d1;
 
     --primary-family: "Champagne", sans-serif;
-    --secondary-family: "Inter", sans-serif;
+    --secondary-family: "Montserrat", sans-serif;
     --primary-font: var(--black);
     --secondary-font: var(--white);
 
@@ -91,6 +91,7 @@ body {
     border-radius: var(--primary-radius);
     background-color: var(--accent);
     font-family: var(--secondary-family);
+    font-weight: 500;
     color: var(--primary-font);
     font-size: 1.25rem;
     outline: 0;
@@ -341,6 +342,7 @@ body {
         font-size: 2.75rem;
     }
 }
+
 /* ********** SECTION 1: OPTION A ********** */
 
 .section-one {
@@ -349,6 +351,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .section-one .card {
@@ -380,37 +383,33 @@ body {
 .section-one .card-body .card-text {
     font-size: 1.25rem;
     font-family: var(--secondary-family);
+    font-weight: 500;
 }
 
-#app.section-three,
-#tickets.section-two,
-#app.section-three p {
+.section-one .card-body .card-text.text-bold {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 972px) {
+    .section-one .card-body .card-title {
+        min-height: auto;
+    }
+
+    .section-one .card-img {
+        margin-top: 1.25rem;
+    }
+}
+
+/* ********** SECTION 2: TICKETS & NEWSLETTER ********** */
+
+#tickets.section-two {
     color: var(--secondary-font);
 }
 
-#app.section-three.inverted,
-#tickets.section-two.inverted,
-#app.section-three.inverted p {
+#tickets.section-two.inverted {
     color: var(--primary-font);
 }
 
-#app.section-three {
-    padding-bottom: 6rem;
-}
-
-#app.section-three.inverted {
-    background-color: var(--contrast);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#app.section-three.inverted .row {
-    max-width: 1320px;
-}
-
-#app.section-three .heading-container,
 #tickets.section-two .heading-container {
     text-align: center;
     display: flex;
@@ -419,34 +418,28 @@ body {
     align-items: center;
 }
 
-#app.section-three .title,
 #tickets.section-two .title {
     font-weight: 600;
 }
 
-#app.section-three .description,
 #tickets.section-two .description {
     font-size: 1.45rem;
 }
 
-#app.section-three p,
 #tickets.section-two p {
     font-size: 1.25rem;
 }
 
-#app.section-three .vendors,
 #tickets.section-two .vendors {
     margin-bottom: 5rem;
 }
 
-#app.section-three .icon,
 #tickets.section-two .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#app.section-three .icon img,
 #tickets.section-two .icon img {
     max-width: 40%;
 }
@@ -483,7 +476,6 @@ body {
         margin-top: 1.25rem;
     }
 
-    #app.section-three,
     #tickets.section-two {
         flex-direction: column;
     }
@@ -492,20 +484,108 @@ body {
         padding-bottom: 6rem;
     }
 
-    #app.section-three .heading-container,
     #tickets.section-two .heading-container {
         text-align: start;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
-    #app.section-three .app-inner,
     #tickets.section-two .app-inner {
         padding-left: 1.5rem;
     }
 
     #tickets.section-two .newsletter {
         padding: 0;
+    }
+}
+
+/* ********** SECTION 3: VENDOR & AUTHOR APPLICATIONS ********** */
+
+#app.section-three,
+#app.section-three p {
+    color: var(--secondary-font);
+}
+
+#app.section-three.inverted,
+#app.section-three.inverted p {
+    color: var(--primary-font);
+}
+
+#app.section-three {
+    padding-bottom: 6rem;
+}
+
+#app.section-three.inverted {
+    background-color: var(--contrast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three.inverted .row {
+    max-width: 1320px;
+}
+
+#app.section-three .heading-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three .title {
+    font-weight: 600;
+}
+
+#app.section-three .description {
+    font-size: 1.45rem;
+    font-family: var(--secondary-family);
+}
+
+#app.section-three p {
+    font-size: 1.25rem;
+    font-family: var(--secondary-family);
+}
+
+#app.section-three .vendors {
+    margin-bottom: 5rem;
+}
+
+#app.section-three .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three .icon img {
+    max-width: 40%;
+}
+
+#app .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 972px) {
+    #app.section-three {
+        flex-direction: column;
+    }
+
+    #tickets.section-two {
+        padding-bottom: 6rem;
+    }
+
+    #app.section-three .heading-container {
+        text-align: start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #app.section-three .app-inner {
+        padding-left: 1.5rem;
     }
 }
 
@@ -526,7 +606,7 @@ body {
 }
 
 #thanks.inverted {
-    background-color: var(--white);
+    background-color: var(--contrast);
     padding: 10rem;
     display: flex;
     flex-direction: column;
@@ -598,6 +678,7 @@ body {
     background-color: var(--transparent);
     padding: 4.83rem 10rem;
     font-family: var(--secondary-family);
+    font-weight: 500;
 }
 
 .contact-container.inverted {
