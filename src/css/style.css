@@ -54,7 +54,7 @@ body {
     background-color: var(--dark);
     color: var(--contrast);
     border: 1px solid var(--dark);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     outline: 0;
     cursor: pointer;
     padding: 1rem 2rem;
@@ -315,7 +315,7 @@ body {
 
 .hero-banner .accent-btn {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 @media screen and (max-width: 992px) {
