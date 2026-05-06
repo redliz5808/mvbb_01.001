@@ -51,9 +51,9 @@ body {
 
 .primary-btn {
     border-radius: var(--primary-radius);
-    background-color: var(--primary);
+    background-color: var(--dark);
     color: var(--contrast);
-    border: 1px solid var(--primary);
+    border: 1px solid var(--dark);
     font-size: 1.5rem;
     outline: 0;
     cursor: pointer;
@@ -64,7 +64,7 @@ body {
 
 .primary-btn:hover {
     background-color: var(--contrast);
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .secondary-btn {
@@ -382,32 +382,84 @@ body {
     font-family: var(--secondary-family);
 }
 
-.section-one #app,
-.section-one #app p {
+#app.section-three,
+#tickets.section-two,
+#app.section-three p {
     color: var(--secondary-font);
 }
 
-.section-one #app .app-inner {
-    padding-left: 5rem;
+#app.section-three.inverted,
+#tickets.section-two.inverted,
+#app.section-three.inverted p {
+    color: var(--primary-font);
 }
 
-.section-one #app .title {
+#app.section-three {
+    padding-bottom: 6rem;
+}
+
+#app.section-three.inverted {
+    background-color: var(--contrast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three.inverted .row {
+    max-width: 1320px;
+}
+
+#app.section-three .heading-container,
+#tickets.section-two .heading-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three .title,
+#tickets.section-two .title {
     font-weight: 600;
 }
 
-.section-one #app .description {
+#app.section-three .description,
+#tickets.section-two .description {
     font-size: 1.45rem;
 }
 
-.section-one #app p {
+#app.section-three p,
+#tickets.section-two p {
     font-size: 1.25rem;
 }
 
-.section-one #app .vendors {
+#app.section-three .vendors,
+#tickets.section-two .vendors {
     margin-bottom: 5rem;
 }
 
-.section-one .newsletter {
+#app.section-three .icon,
+#tickets.section-two .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app.section-three .icon img,
+#tickets.section-two .icon img {
+    max-width: 40%;
+}
+
+#tickets.section-two .icon {
+    justify-content: flex-start;
+}
+
+#tickets.section-two .icon img {
+    transform: rotate(-30deg);
+}
+
+#tickets.section-two .newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,7 +469,7 @@ body {
     border-radius: var(--secondary-radius);
 }
 
-.section-one p {
+#tickets.section-two .newsletter p {
     font-size: 2rem;
     color: var(--primary-font);
 }
@@ -431,20 +483,47 @@ body {
         margin-top: 1.25rem;
     }
 
-    .section-one #app {
+    #app.section-three,
+    #tickets.section-two {
         flex-direction: column;
     }
 
-    .section-one #app .app-inner {
+    #tickets.section-two {
+        padding-bottom: 6rem;
+    }
+
+    #app.section-three .heading-container,
+    #tickets.section-two .heading-container {
+        text-align: start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #app.section-three .app-inner,
+    #tickets.section-two .app-inner {
         padding-left: 1.5rem;
     }
 
-    .section-one .newsletter {
+    #tickets.section-two .newsletter {
         padding: 0;
     }
 }
 
 /* ********** SPECIAL THANKS ********** */
+
+#thanks {
+    padding: 5rem 0;
+}
+
+#thanks,
+#thanks a {
+    color: var(--secondary-font);
+}
+
+#thanks.inverted,
+#thanks.inverted a {
+    color: var(--primary-font);
+}
 
 #thanks.inverted {
     background-color: var(--white);
