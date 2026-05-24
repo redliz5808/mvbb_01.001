@@ -1,0 +1,58 @@
+#eventInfo.section-one {
+    margin-bottom: 0;
+}
+
+#eventInfo.section-one p.inverted {
+    color: var(--secondary-font);
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.15;
+}
+
+#eventInfo.section-one .section-title {
+    font-size: 2.75rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-field-bg);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+#eventInfo.section-one .inverted .card {
+    background-color: transparent;
+}
+
+#eventInfo.section-one .card {
+    border-radius: 0;
+}
+
+#eventInfo.section-one .card-body .card-title {
+    min-height: initial;
+    font-size: 1.75rem;
+}
+
+#eventInfo.section-one .inverted .card .card-title {
+    font-family: var(--primary-family);
+    font-size: 2.5rem;
+}
+
+#eventInfo.section-one .inverted .card .card-body {
+    color: var(--secondary-font);
+    font-size: 1.25rem;
+    font-family: var(--secondary-family);
+}
+
+#eventInfo.section-one .card-body ul {
+    padding-left: 0;
+}
+
+#eventInfo.section-one .card-body ul li {
+    margin-left: 2rem;
+}
+
+#eventInfo.section-one .inverted .ticket-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

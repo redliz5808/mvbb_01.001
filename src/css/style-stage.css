@@ -47,6 +47,7 @@ body {
     background-color: var(--dark);
     font-family: var(--primary-family);
     font-size: 1.15rem;
+    overflow-x: hidden;
 }
 
 .primary-btn {
@@ -54,6 +55,7 @@ body {
     background-color: var(--dark);
     color: var(--contrast);
     border: 1px solid var(--dark);
+    font-family: var(--secondary-family);
     font-size: 1.25rem;
     outline: 0;
     cursor: pointer;
@@ -127,6 +129,10 @@ body {
 
 .text-bold {
     font-weight: 600;
+}
+
+.small-text {
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -376,7 +382,7 @@ body {
 .section-one .card-body .card-title {
     font-size: 2rem;
     font-weight: 700;
-    min-height: 256px;
+    /* min-height: 256px; */
     font-family: var(--secondary-family);
 }
 
@@ -452,6 +458,7 @@ body {
     transform: rotate(-30deg);
 }
 
+#event.section-one #signup,
 #tickets.section-two .newsletter {
     display: flex;
     flex-direction: column;
@@ -682,7 +689,10 @@ body {
 }
 
 .contact-container.inverted {
-    background-color: var(--contrast);
+    background-color: var(--primary-field-bg);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    position: relative;
 }
 
 .contact-container .info-container,
