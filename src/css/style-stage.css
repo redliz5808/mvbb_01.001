@@ -311,12 +311,19 @@ body {
 
 .hero-banner p {
     font-size: 3.25rem;
-    margin-bottom: 4.38rem;
     color: var(--secondary-font);
 }
 
 .hero-banner p.date {
     font-weight: 600;
+    margin-bottom: 4.38rem;
+}
+
+.hero-banner p.description {
+    font-family: var(--secondary-family);
+    font-size: 1.25rem;
+    max-width: 1100px;
+    margin-bottom: 2rem;
 }
 
 .hero-banner .accent-btn {
@@ -369,6 +376,13 @@ body {
     align-items: center;
 }
 
+.section-one .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--secondary-family);
+}
+
 .section-one .card-img,
 .section-one .accent-img {
     max-width: 4.38rem;
@@ -379,11 +393,15 @@ body {
     border-radius: var(--secondary-radius);
 }
 
-.section-one .card-body .card-title {
+.section-one .card-body .card-subtitle {
     font-size: 2rem;
-    font-weight: 700;
-    /* min-height: 256px; */
+    font-weight: 500;
     font-family: var(--secondary-family);
+}
+
+.section-one .card-title.single-line,
+.section-one .card-subtitle.single-line {
+    line-height: 2.4;
 }
 
 .section-one .card-body .card-text {
@@ -392,12 +410,20 @@ body {
     font-weight: 500;
 }
 
+.section-one .card-body .card-text.description {
+    min-height: 8rem;
+}
+
 .section-one .card-body .card-text.text-bold {
     font-weight: 700;
 }
 
 @media screen and (max-width: 972px) {
-    .section-one .card-body .card-title {
+.section-one {
+    margin-bottom: 0;
+}
+
+    .section-one .card-body .card-subtitle {
         min-height: auto;
     }
 
@@ -475,14 +501,6 @@ body {
 }
 
 @media screen and (max-width: 972px) {
-    .section-one .card-body .card-title {
-        min-height: auto;
-    }
-
-    .section-one .card-img {
-        margin-top: 1.25rem;
-    }
-
     #tickets.section-two {
         flex-direction: column;
     }
@@ -654,6 +672,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    #thanks {
+        padding-top: 0;
+    }
+
     #thanks.inverted {
         padding: 2rem 1rem;
     }

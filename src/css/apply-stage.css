@@ -1,5 +1,22 @@
+#apply .hero-banner p {
+    font-size: 2.5rem;
+    max-width: 800px;
+}
+
 #vendorInfo.section-one {
     margin-bottom: 0;
+}
+
+#vendorInfo.section-one .card-body {
+    position: relative;
+}
+
+#vendorInfo.section-one .card-body .hint-text {
+    font-family: var(--secondary-family);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 #vendorInfo.section-one p.inverted {
@@ -27,14 +44,54 @@
     border-radius: 0;
 }
 
+#vendorInfo.section-one .card .card-title,
 #vendorInfo.section-one .card-body .card-title {
     min-height: initial;
     font-size: 1.75rem;
+    color: var(--secondary-font);
 }
 
 #vendorInfo.section-one .inverted .card .card-title {
     font-family: var(--primary-family);
     font-size: 2.5rem;
+}
+
+#vendorInfo.section-one .ticket-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vendorInfo.section-one .ticket-price-container .ticket-price {
+    position: relative;
+    font-family: var(--secondary-family);
+    font-size: 3.5rem;
+    font-weight: 600;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+#vendorInfo.section-one .ticket-price-container .ticket-price::after {
+    content: "$75.00*";
+    display: inline-block;
+    background-image: url(/assets/images/bogoTag.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: var(--secondary-family);
+    font-size: 1.25rem;
+    padding: 2rem 0 2rem 3rem;
+    transform: rotate(15deg);
+    height: 6rem;
+    width: 10rem;
+    margin-left: -1.15rem;
+}
+
+#vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
+    content: "$35.00*";
 }
 
 #vendorInfo.section-one .inverted .card .card-body {
@@ -49,6 +106,14 @@
 
 #vendorInfo.section-one .card-body ul li {
     margin-left: 2rem;
+}
+
+#vendorInfo.section-one .card-body .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 992px) {
@@ -74,4 +139,28 @@
     #vendorInfo .vendor-info-inner .author-description {
         order: 5;
     }
+
+    #vendorInfo.section-one .ticket-price-container .ticket-price {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    #vendorInfo.section-one .ticket-price-container .ticket-price::after {
+        font-size: 1.25rem;
+        padding: 2rem 0 2rem 4rem;
+        margin-left: 0;
+        position: absolute;
+        right: -0.4rem;
+        top: 0.25rem;
+    }
+
+    #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
+        right: 0.8rem;
+    }
+
+    #vendorInfo.section-one .card-body .hint-text {
+    position: relative;
+    bottom: initial;
+    left: initial;
+}
 }
