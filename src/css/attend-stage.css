@@ -1,0 +1,107 @@
+#attend .hero-banner p {
+    font-size: 2.5rem;
+}
+
+#attend .ticket-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventInfo.section-one {
+    margin-bottom: 0;
+}
+
+#eventInfo.section-one .small-text {
+    font-family: var(--secondary-family);
+    font-size: 1rem;
+}
+
+#eventInfo.section-one p.inverted {
+    color: var(--secondary-font);
+    font-size: 2.5rem;
+    max-width: 1100px;
+    text-align: center;
+    line-height: 1.15;
+}
+
+#eventInfo.section-one .section-title {
+    font-size: 2.75rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-field-bg);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+#eventInfo.section-one .inverted .card {
+    background-color: transparent;
+}
+
+#eventInfo.section-one .card {
+    border-radius: 0;
+}
+
+#eventInfo.section-one .ticket-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventInfo.section-one .ticket-price-container .ticket-price {
+    position: relative;
+    font-family: var(--secondary-family);
+    font-size: 3.5rem;
+    font-weight: 600;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+#eventInfo.section-one .ticket-price-container .ticket-price::after {
+    content: "BOGO*";
+    display: inline-block;
+    background-image: url(/assets/images/bogoTag.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: var(--secondary-family);
+    font-size: 1.25rem;
+    padding: 2rem 0 2rem 3rem;
+    transform: rotate(20deg);
+    height: 6rem;
+    width: 10rem;
+    margin-left: -1rem;
+}
+
+#eventInfo.section-one .card-body .card-title {
+    min-height: initial;
+    font-size: 1.75rem;
+    text-align: start;
+}
+
+#eventInfo.section-one .inverted .card .card-title {
+    font-family: var(--primary-family);
+    font-size: 2.5rem;
+}
+
+#eventInfo.section-one .inverted .card .card-body {
+    color: var(--secondary-font);
+    font-size: 1.25rem;
+    font-family: var(--secondary-family);
+}
+
+#eventInfo.section-one .card-body ul {
+    padding-left: 0;
+}
+
+#eventInfo.section-one .card-body ul li {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    #eventInfo.section-one p.inverted {
+        font-size: 2rem;
+    }
+}
