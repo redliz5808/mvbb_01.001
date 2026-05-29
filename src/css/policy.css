@@ -1,0 +1,63 @@
+.policy {
+    font-family: var(--secondary-family);
+}
+
+.policy .header {
+    min-height: initial;
+}
+
+.policy .hero-banner {
+    margin: 5rem 0;
+    font-family: var(--primary-family);
+}
+
+.policy .hero-banner h2 {
+    font-size: 3.25rem;
+    margin-bottom: 4.38rem;
+    color: var(--secondary-font);
+    font-weight: 600;
+    text-align: center;
+}
+
+.policy .privacy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy .privacy .policy-container {
+    max-width: 1200px;
+    padding-bottom: 8rem;
+}
+
+.policy .privacy .policy-container h3,
+.policy .privacy .policy-container p,
+.policy .privacy .policy-container span,
+.policy .privacy .policy-container ul,
+.policy .privacy .policy-container li,
+.policy .privacy .policy-container ol,
+.policy .privacy .policy-container a {
+    color: var(--secondary-font);
+    text-decoration: none;
+}
+
+.policy .privacy .policy-container h3 {
+    font-weight: 600;
+    margin: 3rem 0 2rem 0;
+}
+
+.policy .privacy .policy-container a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.policy footer {
+    font-family: var(--primary-family);
+}
+
+@media screen and (max-width: 992px) {
+    .policy .privacy .policy-container {
+        padding: 1rem 1rem 8rem 1rem;
+    }
+}
