@@ -1,0 +1,168 @@
+#apply .hero-banner p {
+    font-size: 2.5rem;
+    max-width: 800px;
+    line-height: 1.15;
+}
+
+#vendorInfo.section-one {
+    margin-bottom: 0;
+}
+
+#vendorInfo.section-one .card-body {
+    position: relative;
+}
+
+#vendorInfo.section-one .card-body .hint-text {
+    font-family: var(--secondary-family);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#vendorInfo.section-one p.inverted {
+    color: var(--secondary-font);
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.15;
+}
+
+#vendorInfo.section-one .section-title {
+    font-size: 2.75rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-field-bg);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+#vendorInfo.section-one .inverted .card {
+    background-color: transparent;
+}
+
+#vendorInfo.section-one .card {
+    border-radius: 0;
+}
+
+#vendorInfo.section-one .card .card-title,
+#vendorInfo.section-one .card-body .card-title {
+    min-height: initial;
+    font-size: 1.75rem;
+    color: var(--secondary-font);
+}
+
+#vendorInfo.section-one .inverted .card .card-title {
+    font-family: var(--primary-family);
+    font-size: 2.5rem;
+}
+
+#vendorInfo.section-one .ticket-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vendorInfo.section-one .ticket-price-container .ticket-price {
+    position: relative;
+    font-family: var(--secondary-family);
+    font-size: 3.5rem;
+    font-weight: 600;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+#vendorInfo.section-one .ticket-price-container .ticket-price::after {
+    content: "$75.00*";
+    display: inline-block;
+    background-image: url(/assets/images/bogoTag.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: var(--secondary-family);
+    font-size: 1.25rem;
+    padding: 2rem 0 2rem 3rem;
+    transform: rotate(15deg);
+    height: 6rem;
+    width: 10rem;
+    margin-left: -1.15rem;
+}
+
+#vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
+    content: "$35.00*";
+}
+
+#vendorInfo.section-one .inverted .card .card-body {
+    color: var(--secondary-font);
+    font-size: 1.25rem;
+    font-family: var(--secondary-family);
+}
+
+#vendorInfo.section-one .card-body ul {
+    padding-left: 0;
+}
+
+#vendorInfo.section-one .card-body ul li {
+    margin-left: 2rem;
+}
+
+#vendorInfo.section-one .card-body .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    #vendorInfo .vendor-info-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    #vendorInfo .vendor-info-inner #vendorTables {
+        order: 1;
+    }
+    #vendorInfo .vendor-info-inner .vendor-description {
+        order: 2;
+    }
+    #vendorInfo .vendor-info-inner .vendor-table {
+        order: 3;
+    }
+    #vendorInfo .vendor-info-inner #authorTables {
+        order: 4;
+    }
+    #vendorInfo .vendor-info-inner .author-table {
+        order: 6;
+    }
+    #vendorInfo .vendor-info-inner .author-description {
+        order: 5;
+    }
+
+    #vendorInfo.section-one .ticket-price-container .ticket-price {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    #vendorInfo.section-one .ticket-price-container .ticket-price::after {
+        font-size: 1.25rem;
+        padding: 2rem 0 2rem 4rem;
+        margin-left: 0;
+        position: absolute;
+        right: -3.2rem;
+        top: 2.25rem;
+        transform: rotate(30deg);
+    }
+
+    #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
+        right: -1.8rem;
+    }
+
+    #vendorInfo.section-one .card-body .hint-text {
+        position: relative;
+        bottom: initial;
+        left: initial;
+    }
+}
