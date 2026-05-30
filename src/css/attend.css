@@ -1,3 +1,20 @@
+#announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two {
+    left: 14rem;
+}
+
+#announcements .bogo .ticket.two {
+    margin-left: -2rem;
+}
+
+#announcements .bogo .ticket.three {
+    right: 14rem;
+}
+
+#announcements .bogo .ticket.four {
+    right: 16rem;
+}
+
 #attend .hero-banner p {
     font-size: 2.5rem;
 }
@@ -101,6 +118,12 @@
 }
 
 @media screen and (max-width: 992px) {
+    #announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two,
+#announcements .bogo .ticket.three,
+#announcements .bogo .ticket.four {
+    display: none;
+}
     #eventInfo.section-one .ticket-price-container .ticket-price {
         text-align: start;
     }
