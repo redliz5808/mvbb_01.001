@@ -141,6 +141,8 @@ body {
     }
 }
 
+/* *********** HEADER *********** */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -276,6 +278,99 @@ body {
 @media screen and (max-width: 992px) {
     .main-nav.expanded .nav-logo.light {
         display: inline;
+    }
+}
+
+/* ******* ANNOUNCEMENTS ******** */
+
+#announcements {
+    background-color: var(--contrast);
+    padding: 2rem;
+}
+
+#announcements .bogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--secondary-family);
+    font-size: 1.5rem;
+}
+
+#announcements .bogo .ticket {
+    max-width: 7.5rem;
+    transform: rotate(-15deg);
+    /* display: none; */
+    transition: all ease-in-out;
+}
+
+#announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two {
+    position: absolute;
+    left: -9rem;
+    /* animation: 0.5s 0 normal resetTicketsLeft; */
+}
+
+#announcements .bogo .ticket.two,
+#announcements .bogo .ticket.four {
+    margin-left: -2rem;
+    /* duration timing-function direction name */
+    /* animation: 2s normal forwards wiggleTickets; */
+}
+
+#announcements .bogo .ticket.three,
+#announcements .bogo .ticket.four {
+    position: absolute;
+    right: -9rem;
+    /* animation: 0.5s 0 normal resetTicketsRight; */
+}
+
+@keyframes resetTicketsLeft {
+    0% {
+        left: -9rem;
+    }
+    100% {
+        left: 14rem;
+    }
+}
+
+@keyframes resetTicketsThree {
+    0% {
+        right: -9rem;
+    }
+    100% {
+        right: 14rem;
+    }
+}
+
+@keyframes resetTicketsFour {
+    0% {
+        right: -9rem;
+    }
+    100% {
+        right: 16rem;
+    }
+}
+
+@keyframes wiggleTickets {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #announcements {
+        box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+        z-index: 10;
+    }
+    #announcements .bogo {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -419,9 +514,9 @@ body {
 }
 
 @media screen and (max-width: 972px) {
-.section-one {
-    margin-bottom: 0;
-}
+    .section-one {
+        margin-bottom: 0;
+    }
 
     .section-one .card-body .card-subtitle {
         min-height: auto;

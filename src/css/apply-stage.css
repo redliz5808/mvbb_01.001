@@ -159,8 +159,8 @@
     }
 
     #vendorInfo.section-one .card-body .hint-text {
-    position: relative;
-    bottom: initial;
-    left: initial;
-}
+        position: relative;
+        bottom: initial;
+        left: initial;
+    }
 }
