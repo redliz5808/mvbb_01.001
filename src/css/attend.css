@@ -102,13 +102,13 @@
 
 @media screen and (max-width: 992px) {
     #eventInfo.section-one .ticket-price-container .ticket-price {
-    text-align: start;
-}
+        text-align: start;
+    }
 
-#eventInfo.section-one .ticket-price-container .ticket-price::after {
-    position: absolute;
-    padding: 2rem 0 2rem 4rem;
-}
+    #eventInfo.section-one .ticket-price-container .ticket-price::after {
+        position: absolute;
+        padding: 2rem 0 2rem 4rem;
+    }
 
     #eventInfo.section-one p.inverted {
         font-size: 2rem;

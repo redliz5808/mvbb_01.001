@@ -419,9 +419,9 @@ body {
 }
 
 @media screen and (max-width: 972px) {
-.section-one {
-    margin-bottom: 0;
-}
+    .section-one {
+        margin-bottom: 0;
+    }
 
     .section-one .card-body .card-subtitle {
         min-height: auto;
