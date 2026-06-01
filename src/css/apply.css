@@ -1,3 +1,20 @@
+#announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two {
+    left: 14rem;
+}
+
+#announcements .bogo .ticket.two {
+    margin-left: -2rem;
+}
+
+#announcements .bogo .ticket.three {
+    right: 14rem;
+}
+
+#announcements .bogo .ticket.four {
+    right: 16rem;
+}
+
 #apply .hero-banner p {
     font-size: 2.5rem;
     max-width: 800px;
@@ -118,25 +135,38 @@
 }
 
 @media screen and (max-width: 992px) {
+    #announcements .bogo .ticket.one,
+    #announcements .bogo .ticket.two,
+    #announcements .bogo .ticket.three,
+    #announcements .bogo .ticket.four {
+        display: none;
+    }
+
     #vendorInfo .vendor-info-inner {
         display: flex;
         flex-direction: column;
     }
+
     #vendorInfo .vendor-info-inner #vendorTables {
         order: 1;
     }
+
     #vendorInfo .vendor-info-inner .vendor-description {
         order: 2;
     }
+
     #vendorInfo .vendor-info-inner .vendor-table {
         order: 3;
     }
+
     #vendorInfo .vendor-info-inner #authorTables {
         order: 4;
     }
+
     #vendorInfo .vendor-info-inner .author-table {
         order: 6;
     }
+
     #vendorInfo .vendor-info-inner .author-description {
         order: 5;
     }

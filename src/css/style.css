@@ -22,22 +22,37 @@
     font-weight: 600;
 }
 
+/* 
+COLOR 1: #4F4E57;
+COLOR 2: #77899A;
+COLOR 3: #9EB5C6;
+COLOR 4: #D5E1E9;
+COLOR 5: #A7BBB8;
+COLOR 6: #E5E1DD;
+COLOR 6-For WACG Compliance: #FFFBF7;
+COLOR 7: #C38B66;
+COLOR 8: #EDAA29;
+COLOR 8-For WACG Compliance: #874400;
+*/
+
 :root {
-    --white: #fffbff;
+    --white: #fffbf7;
     --black: #000320;
 
-    --primary: #665d60;
-    --contrast: #fffbff;
-    --secondary: var(--black);
+    --primary: #4f4e57;
+    --contrast: #fffbf7;
+    --secondary: #a7bbb8;
+    --secondary-contrast: var(--black);
     --dark: var(--black);
-    --accent: #adc2d1;
+    --accent: #edaa29;
+    --accent-dark: #874400;
 
     --primary-family: "Champagne", sans-serif;
     --secondary-family: "Montserrat", sans-serif;
     --primary-font: var(--black);
     --secondary-font: var(--white);
 
-    --primary-field-bg: #fffbff;
+    --primary-field-bg: #fffbf7;
 
     --primary-radius: 2rem;
     --secondary-radius: 15px;
@@ -183,13 +198,13 @@ body {
 }
 
 .main-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--accent);
     font-weight: 600;
 }
 
 .main-nav .nav-link:hover {
     text-decoration: underline;
-    color: var(--secondary-font);
+    color: var(--accent);
 }
 
 #navLogoMobileMenu {
@@ -525,6 +540,11 @@ body {
     .section-one .card-img {
         margin-top: 1.25rem;
     }
+
+    .section-one .card-title.single-line,
+    .section-one .card-subtitle.single-line {
+        line-height: initial;
+    }
 }
 
 /* ********** SECTION 2: TICKETS & NEWSLETTER ********** */
@@ -746,6 +766,7 @@ body {
     font-weight: 700;
     font-size: 2.5rem;
     margin-right: 7rem;
+    color: var(--accent);
 }
 
 #thanks .heading .img-container {
