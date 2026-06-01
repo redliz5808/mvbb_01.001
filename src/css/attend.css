@@ -119,11 +119,12 @@
 
 @media screen and (max-width: 992px) {
     #announcements .bogo .ticket.one,
-#announcements .bogo .ticket.two,
-#announcements .bogo .ticket.three,
-#announcements .bogo .ticket.four {
-    display: none;
-}
+    #announcements .bogo .ticket.two,
+    #announcements .bogo .ticket.three,
+    #announcements .bogo .ticket.four {
+        display: none;
+    }
+    
     #eventInfo.section-one .ticket-price-container .ticket-price {
         text-align: start;
     }
