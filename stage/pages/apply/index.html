@@ -42,8 +42,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
         <!-- CUSTOM CSS -->
-        <link type="text/css" rel="stylesheet" href="/src/css/style-stage.css" />
-        <link type="text/css" rel="stylesheet" href="/src/css/apply-stage.css" />
+        <link type="text/css" rel="stylesheet" href="/src/css/stage-style.css" />
+        <link type="text/css" rel="stylesheet" href="/src/css/stage-apply.css" />
     </head>
     <body id="apply">
         <!-- ---------- HEADER ---------- -->
@@ -51,8 +51,8 @@
             <!-- ---------- MAIN NAV ---------- -->
             <nav id="mainNav" class="main-nav navbar dark navbar-expand-md navbar-dark">
                 <div class="navbar-brand">
-                    <a class="nav-logo-container light" href="/stage"><img id="navLogoLight" class="nav-logo light img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
-                    <a class="nav-logo-container dark" href="/stage"><img id="navLogoDark" class="nav-logo dark img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
+                    <a class="nav-logo-container light" href="/stage/"><img id="navLogoLight" class="nav-logo light img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
+                    <a class="nav-logo-container dark" href="/stage/"><img id="navLogoDark" class="nav-logo dark img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                 </div>
                 <div class="d-md-none me-3">
                     <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,15 +61,34 @@
                 </div>
                 <div id="collapsibleNav" class="collapse navbar-collapse">
                     <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/attend">Attend</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/apply">Apply to Vend</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage#signup">Get Updates</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#contact">Contact</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend">Attend</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply">Apply to Vend</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#signup">Get Updates</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#contact">Contact</a>
                     <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
                         <h1>Mahoning Valley Book Bazaar</h1>
                     </div>
                 </div>
             </nav>
+            <!-- ---------- ANNOUNCEMENTS ---------- -->
+            <!-- <div id="announcements" class="mb-5 mb-md-0">
+                <div class="bogo my-3">
+                    <img class="ticket one dancing-ticket img-fluid" src="/assets/images/icon_ticket-accent.png" alt="Ticket icon" />
+                    <img class="ticket two dancing-ticket img-fluid" src="/assets/images/icon_ticket-accent.png" alt="Ticket icon" />
+                    <p class="mb-5 mb-md-0 me-md-5 pe-md-5">Tickets are <br class="d-md-none" /><span class="text-bold">Buy One, Get One</span></p>
+                    <p class="mb-4 mb-md-0 pe-md-5"><a class="primary-btn px-5" href="/attend">Buy Now!</a></p>
+                    <img class="ticket three dancing-ticket img-fluid" src="/assets/images/icon_ticket-accent.png" alt="Ticket icon" />
+                    <img class="ticket four dancing-ticket img-fluid" src="/assets/images/icon_ticket-accent.png" alt="Ticket icon" />
+                </div>
+            </div> -->
+            <div id="announcements" class="mb-5 mb-md-0">
+                <div class="bogo my-3">
+                    <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
+                    <p class="mb-5 mb-md-0">Tickets are <br class="d-md-none" /><span class="text-bold">Buy One, Get One</span></p>
+                    <p class="mb-4 mb-md-0"><a class="primary-btn px-5" href="/stage/pages/attend/">Buy Now!</a></p>
+                    <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
+                </div>
+            </div>
             <!-- ---------- HERO-BANNER ---------- -->
             <div class="hero-banner row m-0 h-100 flex-column flex-grow-1">
                 <div class="hero-banner-content col-12 px-4 p-md-0 h-100">
@@ -83,14 +102,13 @@
                 </div>
             </div>
         </header>
-
         <!-- ---------- SECTION 1: WHAT'S INCLUDED ---------- -->
         <section id="vendorInfo" class="section-one container-fluid pt-5 py-md-0 px-0">
-            <h3 id="vendorTables" class="section-title py-5 my-0">Booksellers / Organizations</h3>
+            <h2 id="vendorTables" class="section-title py-5 my-0">Booksellers / Organizations</h2>
             <div class="vendor-info-inner row row-cols-1 row-cols-md-2 mt-0 g-4">
                 <div class="vendor-description inverted col mt-5 mt-md-0 p-0">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title pt-3 pb-5">Vendor Tables</h5>
+                        <h4 class="card-title pt-3 pb-5">Vendor Tables</h4>
                         <img class="card-img img-fluid" src="/assets/images/icon_vendor-wh.png" alt="bookstore icon" />
                         <div class="card-body mt-5 py-3 px-5">
                             <p class="mb-5 pb-3">
@@ -124,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 id="authorTables" class="section-title py-5 my-0">Authors</h3>
+                <h2 id="authorTables" class="section-title py-5 my-0">Authors</h2>
                 <div class="author-table col p-0 mt-5 mt-md-0">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
                         <!-- <img class="card-img img-fluid" src="/assets/images/icon_author.png" alt="book community icon" /> -->
@@ -151,12 +169,213 @@
                 </div>
                 <div class="author-description inverted col mt-5 mt-md-0 p-0">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title pt-3 pb-5">Author Tables</h5>
+                        <h4 class="card-title pt-3 pb-5">Author Tables</h4>
                         <img class="card-img img-fluid" src="/assets/images/icon_author-wh.png" alt="book community icon" />
                         <div class="card-body mt-5 py-3 px-5">
                             <p class="mb-5 pb-3">Authors' imaginations, perseverance, and willingness to share their worlds with readers make events like the Mahoning Valley Book Bazaar special. We'd love your book to be a reader's next favorite!</p>
                             <div class="btn-container">
                                 <a class="accent-btn" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- VENDOR FAQ ---------- -->
+        <section id="vendorFaq" class="section-two container-fluid px-0">
+            <h2 class="section-title py-5 my-0">FAQs</h2>
+            <div class="accordion accordion-flush" id="faqContainer">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#appNotifications" aria-expanded="true" aria-controls="appNotifications">
+                            I've submitted an application. When should I receive notification as to whether it's been accepted?
+                        </button>
+                    </h2>
+                    <div id="appNotifications" class="accordion-collapse collapse show" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p>
+                                    We are a small, but agile team. If you haven't heard from us yet, we are still reviewing your application. We're a team of writers who understand how it feels to be ghosted. We promise we will reach out as soon as
+                                    we've made a decision.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#tableCost" aria-expanded="false" aria-controls="tableCost">How much does a table cost?</button>
+                    </h2>
+                    <div id="tableCost" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <ul>
+                                    <p>We have 2 types of tables available: vendor and author.</p>
+                                    <li><span class="text-bold">Vendor Tables:</span> $100.0<sup>*</sup></li>
+                                    <li><span class="text-bold">Author Tables:</span> $50.00<sup>**</sup></li>
+                                </ul>
+                                <p class="small-text mb-0"><sup>*</sup>Vendor table applications received prior to 11:59PM on 7/31/26 will receive an early bird rate of $75.00</p>
+                                <p class="small-text mb-0"><sup>**</sup>Author table applications received prior to 11:59PM on 7/31/26 will receive an early bird rate of $35.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#vendorOrAuthor" aria-expanded="false" aria-controls="vendorOrAuthor">
+                            How do I know if I need a Vendor Table or an Author Table?
+                        </button>
+                    </h2>
+                    <div id="vendorOrAuthor" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">If you are representing your books and book-related merchandise, we ask that you apply as an author.</p>
+                                <p class="mb-0">If you are a bookseller, literary organization, press/publisher, or similar, we ask that you apply as a vendor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#feeInclusion" aria-expanded="false" aria-controls="feeInclusion">What's included in the fee?</button>
+                    </h2>
+                    <div id="feeInclusion" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <ul>
+                                    <p class="text-bold">Vendor Table Fee Includes:</p>
+                                    <li>8-foot table</li>
+                                    <li>White table cloth</li>
+                                    <li>Two chairs for vendor staff</li>
+                                    <li>Two general admission tickets for vendor staff</li>
+                                    <li>Promotion on all MVBB social channels</li>
+                                </ul>
+                                <ul>
+                                    <p class="text-bold">Author Table Fee Includes:</p>
+                                    <li>½ of shared 8-foot table (one 4-foot section per author)</li>
+                                    <li>White table cloth</li>
+                                    <li>One chair per author</li>
+                                    <li>One general admission ticket per author</li>
+                                    <li>Promotion on all MVBB social channels</li>
+                                </ul>
+                                <div class="social-container">
+                                    <a class="social-link instagram mx-4" href="https://www.instagram.com/mvbookbazaar/" target="_blank">
+                                        <!-- <img class="img-fluid social-icon" src="/assets/images/icon_ig-dk.png" alt="Instagram Logo" /> -->
+                                    </a>
+                                    <a class="social-link facebook mx-4" href="https://www.facebook.com/mvbookbazaar">
+                                        <!-- <img class="img-fluid social-icon" src="/assets/images/icon_fb-dk.png" alt="Facebook Logo" /> -->
+                                    </a>
+                                    <a class="social-link tiktok mx-4" href="https://www.tiktok.com/@mahoningvalleybookbazaar" target="_blank">
+                                        <!-- <img class="img-fluid social-icon" src="/assets/images/icon_tiktok-dk.png" alt="TikTok Logo" /> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#eventLocation" aria-expanded="false" aria-controls="eventLocation">Where is the event taking place?</button>
+                    </h2>
+                    <div id="eventLocation" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    The Bazaar is being hosted at the
+                                    <a href="https://www.ihg.com/holidayinn/hotels/us/en/youngstown/yngso/hoteldetail" target="_blank">Holiday Inn Youngstown, located at 7410 South Avenue, Youngstown OH 44512.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#eventDateTime" aria-expanded="false" aria-controls="eventDateTime">When is the event being held?</button>
+                    </h2>
+                    <div id="eventDateTime" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">Saturday, November 7th, 2026 from 9AM - 5PM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#vendorTable" aria-expanded="false" aria-controls="vendorTable">
+                            Will you supply tables or do I need to bring my own?
+                        </button>
+                    </h2>
+                    <div id="vendorTable" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">Your table (including a white table cloth) is included in the vendor fee.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#mediaKit" aria-expanded="false" aria-controls="mediaKit">Can I share the event on social media?</button>
+                    </h2>
+                    <div id="mediaKit" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">Absolutely! We're excited you're joining us and have created a media kit for your convenience.</p>
+                                <p class="my-5"><a class="accent-btn" href="/stage/pages/media-kit">Media Kit</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#staffTickets" aria-expanded="false" aria-controls="staffTickets">
+                            I have more than 2 staff members interested in attending. Can I purchase additional staff tickets?
+                        </button>
+                    </h2>
+                    <div id="staffTickets" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    Yes. From the <a href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-vendor-registration-18423" target="_blank">Vendor/Author Registration page</a>, select the desired number
+                                    of “Table Staff: General Admission” tickets needed for your staff members.
+                                </p>
+                                <p class="mb-0"><span class="text-bold">Note:</span> Vendor Table fees include 2 general admission tickets. Author Table fees include 1 general admission ticket.</p>
+                                <p class="my-5"><a class="accent-btn" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-vendor-registration-18423" target="_blank">Vendor/Author Registration</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#attendeeTickets" aria-expanded="false" aria-controls="attendeeTickets">
+                            I invited my family and/or friends. What link should I send them if they want to attend?
+                        </button>
+                    </h2>
+                    <div id="attendeeTickets" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    Please direct non-staff attendees to <a href="/stage/pages/attend/">mvbookbazaar.com/attend</a>.
+                                </p>
+                                <p class="my-5"><a class="accent-btn" href="/stage/pages/attend">Buy Tickets</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#contactInfo" aria-expanded="false" aria-controls="contactInfo">
+                            Who do I contact with additional questions?
+                        </button>
+                    </h2>
+                    <div id="contactInfo" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    You can reach our team by emailing <a href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> or calling <a class="unformatted-link" href="tel:+13303609696" target="_blank">(330) 360-9696</a>. You can also contact us through any of our social media accounts.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -188,16 +407,16 @@
                 <div class="info col-12 col-md-8">
                     <p class="tagline mb-5 mb-md-3">Mahoning Valley Book Bazaar</p>
                     <p class="legal-links">
-                        <a class="unformatted-link" href="/stage/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/stage/terms-of-use/">Terms of Use</a><span>&nbsp;|&nbsp; </span
-                        ><a class="unformatted-link" href="/stage/sales-policy/">Sales & Refund Policy</a>
+                        <a class="unformatted-link" href="/stage/pages/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/terms-of-use/">Terms of Use</a><span>&nbsp;|&nbsp; </span
+                        ><a class="unformatted-link" href="/stage/pages/sales-policy/">Sales & Refund Policy</a>
                     </p>
                 </div>
                 <div class="connections col-12 col-md-4">
                     <div class="connections-inner">
-                        <a class="footer-link mt-5 mt-md-0" href="/stage"><img class="img-fluid footer-logo" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
+                        <a class="footer-link mt-5 mt-md-0" href="/"><img class="img-fluid footer-logo" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                         <div class="socials">
                             <a class="social-link instagram px-4 pt-3" href="https://www.instagram.com/mvbookbazaar/" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_ig.png" alt="Instagram Logo" /></a>
-                            <a class="social-link facebook px-4 pt-3" href="https://www.facebook.com/profile.php?id=61582040112916"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a>
+                            <a class="social-link facebook px-4 pt-3" href="https://www.facebook.com/mvbookbazaar"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a>
                             <a class="social-link tiktok px-4 pt-3" href="https://www.tiktok.com/@mahoningvalleybookbazaar" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_tiktok.png" alt="TikTok Logo" /></a>
                         </div>
                     </div>
@@ -228,6 +447,6 @@
         </script>
 
         <!-- CUSTOM SCRIPTS -->
-        <script type="text/javascript" src="/src/js/app.js"></script>
+        <script type="text/javascript" src="/src/js/stage-app.js"></script>
     </body>
 </html>

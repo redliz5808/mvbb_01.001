@@ -105,6 +105,7 @@ body {
 }
 
 .accent-btn {
+    border: 1px solid var(--accent-dark);
     border-radius: var(--primary-radius);
     background-color: var(--accent);
     font-family: var(--secondary-family);
@@ -123,6 +124,7 @@ body {
 .accent-btn:hover {
     background-color: var(--contrast);
     color: var(--dark);
+    border: 1px solid var(--accent-dark);
 }
 
 .unformatted-link {
@@ -305,7 +307,7 @@ body {
 
 #announcements .bogo {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-family: var(--secondary-family);
     font-size: 1.5rem;
@@ -313,31 +315,31 @@ body {
 
 #announcements .bogo .ticket {
     max-width: 7.5rem;
-    transform: rotate(-15deg);
+    /* transform: rotate(-15deg); */
     /* display: none; */
     transition: all ease-in-out;
 }
 
-#announcements .bogo .ticket.one,
+/* #announcements .bogo .ticket.one,
 #announcements .bogo .ticket.two {
     position: absolute;
     left: -9rem;
-    /* animation: 0.5s 0 normal resetTicketsLeft; */
-}
+} */
+/* animation: 0.5s 0 normal resetTicketsLeft; */
 
-#announcements .bogo .ticket.two,
+/* #announcements .bogo .ticket.two,
 #announcements .bogo .ticket.four {
     margin-left: -2rem;
-    /* duration timing-function direction name */
-    /* animation: 2s normal forwards wiggleTickets; */
-}
+} */
+/* duration timing-function direction name */
+/* animation: 2s normal forwards wiggleTickets; */
 
-#announcements .bogo .ticket.three,
+/* #announcements .bogo .ticket.three,
 #announcements .bogo .ticket.four {
     position: absolute;
     right: -9rem;
-    /* animation: 0.5s 0 normal resetTicketsRight; */
-}
+} */
+/* animation: 0.5s 0 normal resetTicketsRight; */
 
 @keyframes resetTicketsLeft {
     0% {
@@ -368,13 +370,13 @@ body {
 
 @keyframes wiggleTickets {
     0% {
-        transform: rotate(-15deg);
+        transform: rotate(0deg);
     }
     50% {
-        transform: rotate(15deg);
+        transform: rotate(30deg);
     }
     100% {
-        transform: rotate(-15deg);
+        transform: rotate(0deg);
     }
 }
 
