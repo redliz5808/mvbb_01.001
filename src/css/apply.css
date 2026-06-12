@@ -45,13 +45,15 @@
     line-height: 1.15;
 }
 
-#vendorInfo.section-one .section-title {
+#vendorInfo.section-one .section-title,
+#vendorFaq.section-two .section-title {
     font-size: 2.75rem;
     width: 100%;
     text-align: center;
     background-color: var(--primary-field-bg);
     box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
     z-index: 10;
+    position: relative;
 }
 
 #vendorInfo.section-one .inverted .card {
@@ -135,6 +137,11 @@
 }
 
 @media screen and (max-width: 992px) {
+    #vendorInfo.section-one .section-title,
+    #vendorFaq.section-two .section-title {
+        background-color: var(--primary-field-bg);
+    }
+
     #announcements .bogo .ticket.one,
     #announcements .bogo .ticket.two,
     #announcements .bogo .ticket.three,
@@ -194,5 +201,92 @@
         position: relative;
         bottom: initial;
         left: initial;
+    }
+}
+
+.section-two a {
+    color: var(--accent-dark);
+    display: inline-block;
+}
+
+.section-two a:hover {
+    color: var(--dark);
+}
+
+.section-two .accordion-button {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 1.35rem;
+    color: var(--dark);
+}
+
+.section-two .accordion-button:not(.collapsed) {
+    background-color: var(--accent);
+}
+
+.section-two .accordion-body p,
+.section-two .accordion-body ul {
+    font-family: var(--secondary-family);
+    font-size: 1.15rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section-two .accordion-body li {
+    margin-left: 3rem;
+}
+
+.section-two .accordion-body .small-text {
+    font-size: 0.9rem;
+}
+
+.section-two .accent-btn {
+    color: var(--dark);
+}
+
+.section-two .social-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-two .social-container .social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(/assets/images/icon_fb-dk.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.section-two .social-container .social-link.instagram {
+    background-image: url(/assets/images/icon_ig-dk.png);
+}
+
+.section-two .social-container .social-link.tiktok {
+    background-image: url(/assets/images/icon_tiktok-dk.png);
+}
+
+.section-two .social-container .social-link:hover {
+    background-image: url(/assets/images/icon_fb-accentdk.png);
+}
+
+.section-two .social-container .social-link.instagram:hover {
+    background-image: url(/assets/images/icon_ig-accentdk.png);
+}
+
+.section-two .social-container .social-link.tiktok:hover {
+    background-image: url(/assets/images/icon_tiktok-accentdk.png);
+}
+
+/* .section-two .social-container .social-icon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+} */
+
+@media screen and (max-width: 992px) {
+    .section-two a {
+        text-align: center;
     }
 }

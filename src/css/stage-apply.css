@@ -1,6 +1,24 @@
+#announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two {
+    left: 14rem;
+}
+
+#announcements .bogo .ticket.two {
+    margin-left: -2rem;
+}
+
+#announcements .bogo .ticket.three {
+    right: 14rem;
+}
+
+#announcements .bogo .ticket.four {
+    right: 16rem;
+}
+
 #apply .hero-banner p {
     font-size: 2.5rem;
     max-width: 800px;
+    line-height: 1.15;
 }
 
 #vendorInfo.section-one {
@@ -27,13 +45,15 @@
     line-height: 1.15;
 }
 
-#vendorInfo.section-one .section-title {
+#vendorInfo.section-one .section-title,
+#vendorFaq.section-two .section-title {
     font-size: 2.75rem;
     width: 100%;
     text-align: center;
     background-color: var(--primary-field-bg);
     box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
     z-index: 10;
+    position: relative;
 }
 
 #vendorInfo.section-one .inverted .card {
@@ -117,25 +137,43 @@
 }
 
 @media screen and (max-width: 992px) {
+    #vendorInfo.section-one .section-title,
+    #vendorFaq.section-two .section-title {
+        background-color: var(--primary-field-bg);
+    }
+
+    #announcements .bogo .ticket.one,
+    #announcements .bogo .ticket.two,
+    #announcements .bogo .ticket.three,
+    #announcements .bogo .ticket.four {
+        display: none;
+    }
+
     #vendorInfo .vendor-info-inner {
         display: flex;
         flex-direction: column;
     }
+
     #vendorInfo .vendor-info-inner #vendorTables {
         order: 1;
     }
+
     #vendorInfo .vendor-info-inner .vendor-description {
         order: 2;
     }
+
     #vendorInfo .vendor-info-inner .vendor-table {
         order: 3;
     }
+
     #vendorInfo .vendor-info-inner #authorTables {
         order: 4;
     }
+
     #vendorInfo .vendor-info-inner .author-table {
         order: 6;
     }
+
     #vendorInfo .vendor-info-inner .author-description {
         order: 5;
     }
@@ -150,17 +188,105 @@
         padding: 2rem 0 2rem 4rem;
         margin-left: 0;
         position: absolute;
-        right: -0.4rem;
-        top: 0.25rem;
+        right: -3.2rem;
+        top: 2.25rem;
+        transform: rotate(30deg);
     }
 
     #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
-        right: 0.8rem;
+        right: -1.8rem;
     }
 
     #vendorInfo.section-one .card-body .hint-text {
         position: relative;
         bottom: initial;
         left: initial;
+    }
+}
+
+.section-two a {
+    color: var(--accent-dark);
+    display: inline-block;
+}
+
+.section-two a:hover {
+    color: var(--dark);
+}
+
+.section-two .accordion-button {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 1.35rem;
+    color: var(--dark);
+}
+
+.section-two .accordion-button:not(.collapsed) {
+    background-color: var(--accent);
+}
+
+.section-two .accordion-body p,
+.section-two .accordion-body ul {
+    font-family: var(--secondary-family);
+    font-size: 1.15rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section-two .accordion-body li {
+    margin-left: 3rem;
+}
+
+.section-two .accordion-body .small-text {
+    font-size: 0.9rem;
+}
+
+.section-two .accent-btn {
+    color: var(--dark);
+}
+
+.section-two .social-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-two .social-container .social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(/assets/images/icon_fb-dk.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.section-two .social-container .social-link.instagram {
+    background-image: url(/assets/images/icon_ig-dk.png);
+}
+
+.section-two .social-container .social-link.tiktok {
+    background-image: url(/assets/images/icon_tiktok-dk.png);
+}
+
+.section-two .social-container .social-link:hover {
+    background-image: url(/assets/images/icon_fb-accentdk.png);
+}
+
+.section-two .social-container .social-link.instagram:hover {
+    background-image: url(/assets/images/icon_ig-accentdk.png);
+}
+
+.section-two .social-container .social-link.tiktok:hover {
+    background-image: url(/assets/images/icon_tiktok-accentdk.png);
+}
+
+/* .section-two .social-container .social-icon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+} */
+
+@media screen and (max-width: 992px) {
+    .section-two a {
+        text-align: center;
     }
 }
