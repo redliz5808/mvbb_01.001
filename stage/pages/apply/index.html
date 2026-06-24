@@ -14,7 +14,7 @@
         <meta property="og:title" content="Apply to Vend | Mahoning Valley Book Bazaar" />
         <meta property="og:type" content="application" />
         <meta property="og:url" content="https://mvbookbazaar.com/apply" />
-        <meta property="og:image" content="/assets/assets/images/MVBB_Logo.png" />
+        <meta property="og:image" content="https://mvbookbazaar.com/assets/images/MVBB_Logo.png" />
         <meta property="og:site_name" content="MVBB" />
         <meta
             property="og:description"
@@ -62,7 +62,16 @@
                 <div id="collapsibleNav" class="collapse navbar-collapse">
                     <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
                     <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend">Attend</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply">Apply to Vend</a>
+                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply">Apply to Vend</a> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/stage/pages/apply" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendors/Authors</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/stage/pages/apply">Apply to Vend</a></li>
+                            <li><a class="dropdown-item" href="/stage/pages/media">Media Kit</a></li>
+                            <li><a class="dropdown-item" href="/stage/pages/apply#vendorFaq">Vendor/Author FAQ</a></li>
+                            <li><a class="dropdown-item" href="/stage/pages/showcase">Vendor/Author Showcase</a></li>
+                        </ul>
+                    </li>
                     <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#signup">Get Updates</a>
                     <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#contact">Contact</a>
                     <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
@@ -195,9 +204,9 @@
                     <div id="appNotifications" class="accordion-collapse collapse show" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p>
-                                    We are a small, but agile team. If you haven't heard from us yet, we are still reviewing your application. We're a team of writers who understand how it feels to be ghosted. We promise we will reach out as soon as
-                                    we've made a decision.
+                                <p class="mb-0">
+                                    We are a small, but agile team. If you haven't heard from us yet, we are likely still reviewing your application. We promise we will reach out as soon as we've made a decision. If you're concerned there was an
+                                    issue with your application, please email us at <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a>.
                                 </p>
                             </div>
                         </div>
@@ -210,13 +219,12 @@
                     <div id="tableCost" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
+                                <p>We have 2 types of tables available: vendor and author.</p>
                                 <ul>
-                                    <p>We have 2 types of tables available: vendor and author.</p>
-                                    <li><span class="text-bold">Vendor Tables:</span> $100.0<sup>*</sup></li>
-                                    <li><span class="text-bold">Author Tables:</span> $50.00<sup>**</sup></li>
+                                    <li><span class="text-bold">Vendor Tables:</span> $100.00 full price / $75.00 early bird</li>
+                                    <li><span class="text-bold">Author Tables:</span> $50.00 full price / $35.00 early bird</li>
                                 </ul>
-                                <p class="small-text mb-0"><sup>*</sup>Vendor table applications received prior to 11:59PM on 7/31/26 will receive an early bird rate of $75.00</p>
-                                <p class="small-text mb-0"><sup>**</sup>Author table applications received prior to 11:59PM on 7/31/26 will receive an early bird rate of $35.00</p>
+                                <p>Early bird pricing is available for vendors and authors who are accepted and submit payment of their table fee by 07/31/2026.</p>
                             </div>
                         </div>
                     </div>
@@ -230,8 +238,12 @@
                     <div id="vendorOrAuthor" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p class="mb-0">If you are representing your books and book-related merchandise, we ask that you apply as an author.</p>
-                                <p class="mb-0">If you are a bookseller, literary organization, press/publisher, or similar, we ask that you apply as a vendor.</p>
+                                <p>If you are representing books you have written, we ask that you apply as an <a class="unformatted-link" href="/stage/pages/apply#authorTables">author</a>.</p>
+                                <p>If you are a bookseller, literary organization, press/publisher, or similar, we ask that you apply as a <a class="unformatted-link" href="/stage/pages/apply#vendorTables">vendor</a>.</p>
+                                <p class="mb-0">
+                                    A limited number of vendor tables may be available to appropriate authors. If you are interested in upgrading to a vendor table, please email us at
+                                    <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> upon your application's acceptance.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -263,7 +275,7 @@
                                     <a class="social-link instagram mx-4" href="https://www.instagram.com/mvbookbazaar/" target="_blank">
                                         <!-- <img class="img-fluid social-icon" src="/assets/images/icon_ig-dk.png" alt="Instagram Logo" /> -->
                                     </a>
-                                    <a class="social-link facebook mx-4" href="https://www.facebook.com/mvbookbazaar">
+                                    <a class="social-link facebook mx-4" href="https://www.facebook.com/mvbookbazaar" target="_blank">
                                         <!-- <img class="img-fluid social-icon" src="/assets/images/icon_fb-dk.png" alt="Facebook Logo" /> -->
                                     </a>
                                     <a class="social-link tiktok mx-4" href="https://www.tiktok.com/@mahoningvalleybookbazaar" target="_blank">
@@ -289,6 +301,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#groupRate" aria-expanded="false" aria-controls="groupRate">Is there a Group Rate I should mention when booking my hotel room?</button>
+                    </h2>
+                    <div id="groupRate" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    Yes. Our Group Rate Code is <a href="https://www.ihg.com/holidayinn/hotels/us/en/youngstown/yngso/hoteldetail" target="_blank">XXXXX</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#eventDateTime" aria-expanded="false" aria-controls="eventDateTime">When is the event being held?</button>
@@ -310,7 +336,44 @@
                     <div id="vendorTable" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p class="mb-0">Your table (including a white table cloth) is included in the vendor fee.</p>
+                                <p class="mb-0">Tables, white table cloths, and chairs are included in the vendor and author fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#meals" aria-expanded="false" aria-controls="meals">Will any meals be provided?</button>
+                    </h2>
+                    <div id="meals" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p>No. There are many restaurants within walking distance of the venue.</p>
+                                <p class="my-5">
+                                    <a class="accent-btn" href="https://www.google.com/maps/search/restaurants+near+7410+South+Avenue+Youngstown+OH+44512/@41.0229335,-80.6357431,17z?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+                                        >Search for Restaurants</a
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#drinks" aria-expanded="false" aria-controls="drinks">Will any drinks be provided?</button>
+                    </h2>
+                    <div id="drinks" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p>Yes. Coffee, tea, and water will be available throughout the day. Additional drinks can be purchased within walking distance of the venue.</p>
+                                <p class="my-5">
+                                    <a
+                                        class="accent-btn"
+                                        href="https://www.google.com/maps/search/convenience+stores+near+7410+south+avenue+youngstown+oh+44512/@41.0240249,-80.6388739,15.5z?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank"
+                                        >Search for Convenience Stores</a
+                                    >
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -322,8 +385,9 @@
                     <div id="mediaKit" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p class="mb-0">Absolutely! We're excited you're joining us and have created a media kit for your convenience.</p>
-                                <p class="my-5"><a class="accent-btn" href="/stage/pages/media-kit">Media Kit</a></p>
+                                <p>Absolutely! We're excited you're joining us and have created a media kit for your convenience.</p>
+                                <p>Please use the hashtag <span class="text-bold">#mvbb26</span> and/or <span class="text-bold">#mvbookbazaar</span> in your posts.</p>
+                                <p class="my-5"><a class="accent-btn" href="/stage/pages/media">Media Kit</a></p>
                             </div>
                         </div>
                     </div>
@@ -337,11 +401,11 @@
                     <div id="staffTickets" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p class="mb-0">
-                                    Yes. From the <a href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-vendor-registration-18423" target="_blank">Vendor/Author Registration page</a>, select the desired number
-                                    of “Table Staff: General Admission” tickets needed for your staff members.
+                                <p>
+                                    Yes. From the <a href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-vendor-registration-18423" target="_blank">Vendor/Author Registration page</a>, select the desired number of “Table Staff: General
+                                    Admission” tickets needed for your staff members.
                                 </p>
-                                <p class="mb-0"><span class="text-bold">Note:</span> Vendor Table fees include 2 general admission tickets. Author Table fees include 1 general admission ticket.</p>
+                                <p><span class="text-bold">Note:</span> Vendor Table fees include 2 general admission tickets. Author Table fees include 1 general admission ticket.</p>
                                 <p class="my-5"><a class="accent-btn" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-vendor-registration-18423" target="_blank">Vendor/Author Registration</a></p>
                             </div>
                         </div>
@@ -356,10 +420,65 @@
                     <div id="attendeeTickets" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
-                                <p class="mb-0">
-                                    Please direct non-staff attendees to <a href="/stage/pages/attend/">mvbookbazaar.com/attend</a>.
-                                </p>
+                                <p class="mb-0">Please direct non-staff attendees to <a href="/stage/pages/attend/">mvbookbazaar.com/attend</a>.</p>
                                 <p class="my-5"><a class="accent-btn" href="/stage/pages/attend">Buy Tickets</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#salesResponsibility" aria-expanded="false" aria-controls="salesResponsibility">
+                            Can you take sales for me?
+                        </button>
+                    </h2>
+                    <div id="salesResponsibility" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">
+                                    You are responsible for your inventory, sales, and the collection of sales tax, if applicable. For more information on sales tax for Mahoning County, please go to
+                                    <a class="unformatted-link" href="https://www.mahoningcountyoh.gov/" target="_blank">www.mahoningcountyoh.gov</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#internet" aria-expanded="false" aria-controls="internet">Will internet access be available?</button>
+                    </h2>
+                    <div id="internet" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">Yes. Wi-Fi is available on the sales floor to assist you in processing orders. If accepting cash payments, please remember to bring change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#tableSetup" aria-expanded="false" aria-controls="tableSetup">
+                            When can I set up my table and will MVBB provide assistance?
+                        </button>
+                    </h2>
+                    <div id="tableSetup" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">Detailed instructions will be emailed to you prior to the Bazaar. While volunteers may be available to assist you, please bring enough staff to ensure timely set-up.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#audience" aria-expanded="false" aria-controls="audience">
+                            Is there a specific audience for which I should tailor my merchandise?
+                        </button>
+                    </h2>
+                    <div id="audience" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-md-5 py-3">
+                                <p class="mb-0">We are an inclusive event and expect attendees of all ages, backgrounds, reading levels, and lifestyles.</p>
                             </div>
                         </div>
                     </div>
@@ -374,7 +493,7 @@
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-md-5 py-3">
                                 <p class="mb-0">
-                                    You can reach our team by emailing <a href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> or calling <a class="unformatted-link" href="tel:+13303609696" target="_blank">(330) 360-9696</a>. You can also contact us through any of our social media accounts.
+                                    You can reach our team by emailing <a href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> or calling <a class="unformatted-link" href="tel:+13303609696" target="_blank">(330) 360-9696</a>.
                                 </p>
                             </div>
                         </div>

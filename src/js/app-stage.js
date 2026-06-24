@@ -25,24 +25,6 @@ for (let link of navLinks) {
 }
 
 if (windowWidth > 992) {
-    // setTimeout(() => {
-    //     if (dancingTickets != null || dancingTickets != undefined) {
-    //         for (let ticket of dancingTickets) {
-    //             if (ticket.classList.contains("one") || ticket.classList.contains("two")) {
-    //                 ticket.style.animation = "1s normal forwards resetTicketsLeft";
-    //                 ticket.style.left = "14rem";
-    //             }
-    //             if (ticket.classList.contains("three")) {
-    //                 ticket.style.animation = "1s normal forwards resetTicketsThree";
-    //                 ticket.style.right = "14rem";
-    //             }
-    //             if (ticket.classList.contains("four")) {
-    //                 ticket.style.animation = "1s normal forwards resetTicketsFour";
-    //                 ticket.style.right = "16rem";
-    //             }
-    //         }
-    //     }
-    // }, 500);
 
     setTimeout(() => {
         if (dancingTickets != null || dancingTickets != undefined) {
@@ -52,4 +34,27 @@ if (windowWidth > 992) {
             }
         }
     }, 500);
+}
+
+
+const toggles = document.getElementsByClassName("text-toggle");
+
+for (let toggleItem of toggles) {
+    toggleItem.addEventListener("click", () => {
+        let container = toggleItem.parentElement;
+        let allChildren = container.children;
+
+        for (let child of allChildren) {
+            if (child.classList.contains("bio")) {
+                child.classList.toggle("show");
+            }
+            if(child.classList.contains("collapse")) {
+                child.classList.toggle("show");
+            }
+            if(child.classList.contains("expand")) {
+                child.classList.toggle("hide");
+            }
+        }
+
+    })
 }

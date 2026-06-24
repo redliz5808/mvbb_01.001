@@ -240,7 +240,8 @@
     font-size: 0.9rem;
 }
 
-.section-two .accent-btn {
+.section-two .accent-btn,
+.section-two .accent-btn:hover {
     color: var(--dark);
 }
 
