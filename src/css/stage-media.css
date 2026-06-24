@@ -152,7 +152,7 @@
 
 #mvbbInfo .images .image-repository .download-link:hover {
     filter: contrast(100%) grayscale(0%);
-  transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #mvbbInfo .mk-contact-info .social-container {
@@ -190,4 +190,69 @@
 
 #mvbbInfo .mk-contact-info .social-container .social-link.tiktok:hover {
     background-image: url(/assets/images/icon_tiktok-accent.png);
+}
+
+@media screen and (max-width: 992px) {
+    #mvbbInfo .about-us,
+    #mvbbInfo .event-logistics,
+    #mvbbInfo .press-releases,
+    #mvbbInfo .images,
+    #mvbbInfo .mk-contact-info {
+        display: initial;
+        width: initial;
+        flex-direction: initial;
+        justify-content: initial;
+        align-items: initial;
+    }
+
+    #mvbbInfo .team-members {
+        width: initial;
+    }
+
+    #mvbbInfo .team-member {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    #mvbbInfo .team-member:nth-child(even) .headshot-container,
+    #mvbbInfo .team-member:nth-child(odd) .headshot-container,
+    #mvbbInfo .team-member:nth-child(even) .bio-container,
+    #mvbbInfo .team-member:nth-child(odd) .bio-container {
+        order: initial;
+    }
+
+    #mvbbInfo .team-member .bio-container {
+        width: initial;
+        padding: 1rem;
+    }
+
+    #mvbbInfo .event-logistics ul {
+        margin-left: 2rem;
+    }
+
+    #mvbbInfo ul li {
+        padding-right: 2rem;
+    }
+
+    #mvbbInfo .press-releases ul {
+        padding: 1.25rem;
+    }
+
+    #mvbbInfo .press-releases ul a {
+        font-size: 1.25rem;
+    }
+
+    #mvbbInfo .images .image-repository {
+        flex-direction: column;
+    }
+
+    #mvbbInfo .images .image-repository .download-link,
+    #mvbbInfo .images .image-repository .download-link.large-img {
+        width: 100%;
+    }
+
+    #mvbbInfo .mk-contact-info p {
+        padding-left: 2rem;
+    }
 }

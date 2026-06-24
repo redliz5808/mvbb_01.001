@@ -10,11 +10,6 @@
 }
 
 #showcase .vendor-list {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    width: 100%;
     background-color: var(--primary-field-bg);
     padding-bottom: 3rem;
 }
@@ -53,6 +48,10 @@
     align-items: flex-start;
 }
 
+#showcase .vendor .bio-container .vendor-name {
+    font-weight: 600;
+}
+
 #showcase .vendor .bio-container .bio {
     color: var(--primary-font);
     font-family: var(--secondary-family);
@@ -77,7 +76,7 @@
     overflow: initial;
     -webkit-line-clamp: initial;
     -webkit-box-orient: initial;
-    height: initial
+    height: initial;
 }
 
 #showcase .vendor .bio-container .expand.hide {
@@ -157,6 +156,18 @@
     }
     #announcements .bogo {
         flex-direction: column;
+        text-align: center;
+    }
+
+    #showcase .vendor .bio-container .bio {
+        font-size: 1rem;
+    }
+
+    #showcase #ctaAuthors.cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 }
