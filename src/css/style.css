@@ -320,27 +320,6 @@ body {
     transition: all ease-in-out;
 }
 
-/* #announcements .bogo .ticket.one,
-#announcements .bogo .ticket.two {
-    position: absolute;
-    left: -9rem;
-} */
-/* animation: 0.5s 0 normal resetTicketsLeft; */
-
-/* #announcements .bogo .ticket.two,
-#announcements .bogo .ticket.four {
-    margin-left: -2rem;
-} */
-/* duration timing-function direction name */
-/* animation: 2s normal forwards wiggleTickets; */
-
-/* #announcements .bogo .ticket.three,
-#announcements .bogo .ticket.four {
-    position: absolute;
-    right: -9rem;
-} */
-/* animation: 0.5s 0 normal resetTicketsRight; */
-
 @keyframes resetTicketsLeft {
     0% {
         left: -9rem;

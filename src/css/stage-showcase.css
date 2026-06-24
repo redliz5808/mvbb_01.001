@@ -1,0 +1,173 @@
+#showcase .section-title {
+    font-size: 2.75rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    position: relative;
+}
+
+#showcase .vendor-list {
+    background-color: var(--primary-field-bg);
+    padding-bottom: 3rem;
+}
+
+#showcase .vendor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100%; */
+    padding: 1rem;
+}
+
+#showcase .vendor .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 18.75rem;
+    width: 18.75rem;
+    min-height: 18.75rem;
+    min-width: 18.75rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+#showcase .vendor .logo-container .logo {
+    height: 100%;
+    width: 100%;
+}
+
+#showcase .vendor .bio-container {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#showcase .vendor .bio-container .vendor-name {
+    font-weight: 600;
+}
+
+#showcase .vendor .bio-container .bio {
+    color: var(--primary-font);
+    font-family: var(--secondary-family);
+    height: 7.25rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#showcase .vendor .bio-container .bio p:first-of-type {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#showcase .vendor .bio-container .bio.show,
+#showcase .vendor .bio-container .bio.show p:first-of-type {
+    display: initial;
+    overflow: initial;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    height: initial;
+}
+
+#showcase .vendor .bio-container .expand.hide {
+    display: none;
+}
+
+#showcase .vendor .bio-container .bio .vendor-name {
+    font-weight: 600;
+    color: var(--primary-font);
+    font-family: var(--primary-family);
+    font-size: 2rem;
+}
+
+/* #showcase .vendor .bio-container .vendor-name .pronouns {
+    font-weight: 400;
+} */
+
+#showcase .vendor .bio-container ul {
+    padding-left: 0;
+}
+
+#showcase .vendor .bio-container ul li {
+    margin-left: 2rem;
+}
+
+#showcase .vendor .bio-container .text-toggle {
+    width: 100%;
+    text-align: end;
+    font-weight: 600;
+    color: var(--accent-dark);
+}
+
+#showcase .cta {
+    background-color: var(--accent);
+    color: var(--primary-font);
+    font-family: var(--secondary-family);
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+#showcase .cta.inverted {
+    background-color: var(--dark);
+    color: var(--accent);
+}
+
+#showcase .cta .ticket {
+    max-width: 10.5rem;
+}
+
+#showcase #ctaVendors.cta .ticket {
+    max-width: 6.5rem;
+}
+
+#showcase .cta .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase .cta .content p {
+    max-width: 800px;
+    text-align: center;
+}
+
+#showcase .cta.inverted .content p {
+    color: var(--primary-field-bg);
+}
+
+@media screen and (max-width: 992px) {
+    #announcements {
+        box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+        z-index: 10;
+    }
+    #announcements .bogo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #showcase .vendor .bio-container .bio {
+        font-size: 1rem;
+    }
+
+    #showcase #ctaAuthors.cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

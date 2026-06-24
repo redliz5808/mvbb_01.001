@@ -188,13 +188,13 @@
         padding: 2rem 0 2rem 4rem;
         margin-left: 0;
         position: absolute;
-        right: -3.2rem;
-        top: 2.25rem;
-        transform: rotate(30deg);
+        right: 0.9rem;
+        top: 1rem;
+        transform: rotate(25deg);
     }
 
     #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
-        right: -1.8rem;
+        right: 2.2rem;
     }
 
     #vendorInfo.section-one .card-body .hint-text {
@@ -240,7 +240,8 @@
     font-size: 0.9rem;
 }
 
-.section-two .accent-btn {
+.section-two .accent-btn,
+.section-two .accent-btn:hover {
     color: var(--dark);
 }
 
