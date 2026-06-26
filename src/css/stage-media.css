@@ -39,6 +39,10 @@
     margin-left: 5rem;
 }
 
+#mvbbInfo .event-logistics ul li ul {
+    margin-left: 0;
+}
+
 #mvbbInfo .team-members {
     display: flex;
     flex-direction: column;
@@ -254,5 +258,63 @@
 
     #mvbbInfo .mk-contact-info p {
         padding-left: 2rem;
+    }
+}
+
+#media .cta {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+#media .cta.inverted {
+    background-color: var(--dark);
+    color: var(--accent);
+}
+
+#media .cta .ticket {
+    max-width: 10.5rem;
+}
+
+#media #ctaVendors.cta .ticket {
+    max-width: 6.5rem;
+}
+
+#media .cta p,
+#media .cta .content p {
+    color: var(--primary-font);
+    font-family: var(--secondary-family);
+    font-size: 1.5rem;
+}
+
+#media .cta .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#media .cta .content p {
+    max-width: 800px;
+    text-align: center;
+}
+
+#media .cta.inverted .content p {
+    color: var(--primary-field-bg);
+}
+
+@media screen and (max-width: 992px) {
+    #media .vendor .bio-container .bio {
+        font-size: 1rem;
+    }
+
+    #media #ctaAuthors.cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
