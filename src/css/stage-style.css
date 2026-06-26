@@ -113,7 +113,6 @@ body {
     color: var(--primary-font);
     font-size: 1.25rem;
     outline: 0;
-    border: none;
     cursor: pointer;
     padding: 1.15rem 4.38rem;
     text-decoration: none;
