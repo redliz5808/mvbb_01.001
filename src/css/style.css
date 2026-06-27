@@ -112,8 +112,8 @@ body {
     font-weight: 500;
     color: var(--primary-font);
     font-size: 1.25rem;
+    text-align: center;
     outline: 0;
-    border: none;
     cursor: pointer;
     padding: 1.15rem 4.38rem;
     text-decoration: none;
@@ -127,13 +127,24 @@ body {
     border: 1px solid var(--accent-dark);
 }
 
-.unformatted-link {
+.unformatted-link,
+.unformatted-button {
     color: initial;
     text-decoration: initial;
 }
 
-.unformatted-link:hover {
+.unformatted-link:hover,
+.unformatted-button:hover {
     text-decoration: underline;
+}
+
+.unformatted-button {
+    border: none;
+    outline: 0;
+    background-color: initial;
+    padding: 0;
+    margin: 0;
+    display: inline;
 }
 
 .primary-text {
@@ -207,6 +218,22 @@ body {
 .main-nav .nav-link:hover {
     text-decoration: underline;
     color: var(--accent);
+}
+
+.main-nav .dropdown-menu {
+    background-color: var(--dark);
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.main-nav .dropdown-menu .dropdown-item {
+    color: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.main-nav .dropdown-menu .dropdown-item:hover {
+    background-color: var(--accent);
+    color: var(--primary-font);
 }
 
 #navLogoMobileMenu {
@@ -319,6 +346,27 @@ body {
     /* display: none; */
     transition: all ease-in-out;
 }
+
+/* #announcements .bogo .ticket.one,
+#announcements .bogo .ticket.two {
+    position: absolute;
+    left: -9rem;
+} */
+/* animation: 0.5s 0 normal resetTicketsLeft; */
+
+/* #announcements .bogo .ticket.two,
+#announcements .bogo .ticket.four {
+    margin-left: -2rem;
+} */
+/* duration timing-function direction name */
+/* animation: 2s normal forwards wiggleTickets; */
+
+/* #announcements .bogo .ticket.three,
+#announcements .bogo .ticket.four {
+    position: absolute;
+    right: -9rem;
+} */
+/* animation: 0.5s 0 normal resetTicketsRight; */
 
 @keyframes resetTicketsLeft {
     0% {
@@ -917,7 +965,8 @@ footer .legal-links {
 
 footer .legal-links,
 footer a,
-footer a.unformatted-link {
+footer a.unformatted-link,
+footer a.unformatted-button {
     color: var(--secondary-font);
 }
 
