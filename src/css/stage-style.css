@@ -112,6 +112,7 @@ body {
     font-weight: 500;
     color: var(--primary-font);
     font-size: 1.25rem;
+    text-align: center;
     outline: 0;
     cursor: pointer;
     padding: 1.15rem 4.38rem;
