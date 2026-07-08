@@ -58,24 +58,36 @@
                 </div>
                 <div id="collapsibleNav" class="collapse navbar-collapse">
                     <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend">Attend</a>
-                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply">Apply to Vend</a> -->
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#signup">Get Updates</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend" role="button" data-bs-toggle="dropdown" aria-expanded="false">Attend</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/stage/pages/attend">Attendee Information</a></li>
+                            <li><a class="dropdown-item" href="/stage/pages/showcase">Vendor/Author Showcase</a></li>
+                        </ul>
+                    </div>
+                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/apply">Apply to Vend</a> -->
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendors/Authors</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/stage/pages/apply">Apply to Vend</a></li>
-                            <li><a class="dropdown-item" href="/stage/pages/media">Media Kit</a></li>
                             <li><a class="dropdown-item" href="/stage/pages/apply#vendorFaq">Vendor/Author FAQ</a></li>
-                            <li><a class="dropdown-item" href="/stage/pages/showcase">Vendor/Author Showcase</a></li>
                         </ul>
                     </div>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage#signup">Get Updates</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage#contact">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/media" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/stage/pages/media">Media Kit</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a>
+                        </ul>
+                    </div>
+                    
                     <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
                         <h1>Mahoning Valley Book Bazaar</h1>
                     </div>
                 </div>
             </nav>
+
             <!-- ---------- ANNOUNCEMENTS ---------- -->
             <div id="announcements" class="mb-5 mb-md-0">
                 <div class="bogo my-3">
@@ -118,7 +130,7 @@
                 </p>
                 <p class="m-0"><span class="text-bold">Date/Time:</span> Saturday, November 7th, 2026 | 9AM - 5PM</p>
                 <p class="m-0"><span class="text-bold">Location:</span> Holiday Inn Youngstown, 7410 South Avenue, Youngstown OH 44512</p>
-                <p class="m-0"><span class="text-bold">Participating Vendors/Authors:</span> <br class="d-block d-md-none" /><a class="accent-text unformatted-link" href="/stage/pages/showcase">View list here</a>.</p>
+                <p class="m-0"><span class="text-bold">Participating Vendors/Authors:</span> <br class="d-block d-md-none" /><a class="accent-text unformatted-link" href="/showcase">View list here</a>.</p>
                 <p class="m-0">
                     <span class="text-bold">Ticket Pricing:</span>
                 </p>
@@ -126,7 +138,7 @@
                     <li>Vendor Tables: $100.00 full price / $75.00 early bird</li>
                     <li>Author Tables: $50.00 full price / $35.00 early bird</li>
                     <li>General Admission Ticket: $10.00 / Buy One Get One for a Limited Time</li>
-                    <li>Children 12 years old and under: No ticket required.<sup>^</sup></li>
+                    <li>Children 12 years old and under: No ticket required.<sup class="small-text">^</sup></li>
                 </ul>
                 <p class="m-0">
                     <span class="text-bold">Ways to purchase tickets:</span>
@@ -154,7 +166,7 @@
                     </li>
                 </ul>
                 <p><span class="text-bold">Food/Beverage:</span> Coffee, tea, and water will be available throughout the day, but meals/snacks are not provided.</p>
-                <p class="small-text mt-5"><sup>^</sup>Children must be accompanied by an adult.</p>
+                <p class="small-text mt-5"><sup class="small-text">^</sup>Children must be accompanied by an adult.</p>
             </div>
 
             <!-- ---------- CALL TO ACTION ---------- -->
@@ -252,8 +264,13 @@
             <!-- PRESS RELEASES -->
             <div class="press-releases row">
                 <h2 id="pressReleases" class="section-title py-5 my-5">Press Releases</h2>
-                <ul>
-                    <li>
+                <ul class="press-release-container">
+                    <li class="article">
+                        <a class="accent-text unformatted-link" href="https://businessjournaldaily.com/inaugural-mahoning-valley-book-bazaar-set-for-november/" target="_blank"
+                            >The Business Journal: Inaugural Mahoning Valley Book Bazaar Set for November - 6/29/2026</a
+                        >
+                    </li>
+                    <li class="article">
                         <a class="accent-text unformatted-link" href="https://www.wkbn.com/news/local-news/boardman-news/book-bazaar-to-bring-together-reading-writing-community/" target="_blank"
                             >WKBN 27 News: Book Bazaar to bring together reading, writing community - 6/16/2026</a
                         >
@@ -299,7 +316,7 @@
                 <img class="ticket img-fluid d-none d-md-block" src="/assets/images/bookshelf.png" alt="Ticket icon" />
                 <div class="content">
                     <p class="mb-5">We're still accepting applications to be a participating author or vendor.</p>
-                    <p class="mb-4 mb-md-3"><a class="primary-btn px-5" href="/apply/">Apply Now!</a></p>
+                    <p class="mb-4 mb-md-3"><a class="primary-btn px-5" href="/stage/pages/apply/">Apply Now!</a></p>
                 </div>
                 <img class="ticket img-fluid d-none d-md-block" src="/assets/images/bookstore.png" alt="Ticket icon" />
             </aside>

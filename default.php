@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
         <meta property="og:title" content="Mahoning Valley Book Bazaar" />
         <meta property="og:type" content="application" />
         <meta property="og:url" content="https://mvbookbazaar.com/" />
-        <meta property="og:image" content="https://mvbookbazaar.com/assets/images/MVBB_Logo.png" />
+        <meta property="og:image" content="/assets/assets/images/MVBB_Logo.png" />
         <meta property="og:site_name" content="MVBB" />
         <meta property="og:description" content="The Mahoning Valley Book Bazaar is a one-day meet-up where bookstores, publishers, authors, and other bookish vendors bring their best merch (new and used!) to one place: Youngstown, Ohio." />
 
@@ -54,112 +54,118 @@
                 </div>
                 <div id="collapsibleNav" class="collapse navbar-collapse">
                     <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/#signup">Get Updates</a>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/attend" role="button" data-bs-toggle="dropdown" aria-expanded="false">Attend</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/attend">Attendee Information</a></li>
-                            <li><a class="dropdown-item" href="/showcase">Vendor/Author Showcase</a></li>
-                        </ul>
-                    </div>
-                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/apply">Apply to Vend</a> -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/apply" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendors/Authors</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/apply">Apply to Vend</a></li>
-                            <li><a class="dropdown-item" href="/apply#vendorFaq">Vendor/Author FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/media" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/media">Media Kit</a></li>
-                            <li><a class="dropdown-item" href="#contact">Contact</a>
-                        </ul>
-                    </div>
-                    
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#app">Apply to Vend</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#signup">Get Updates</a>
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#contact">Contact</a>
                     <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
                         <h1>Mahoning Valley Book Bazaar</h1>
                     </div>
                 </div>
             </nav>
-
-            <!-- ---------- ANNOUNCEMENTS ---------- -->
-            <div id="announcements" class="mb-5 mb-md-0">
-                <div class="bogo my-3">
-                    <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
-                    <p class="mb-5 mb-md-0">Tickets are <br class="d-md-none" /><span class="text-bold">Buy One, Get One</span></p>
-                    <p class="mb-4 mb-md-0"><a class="primary-btn px-5" href="/attend/">Buy Now!</a></p>
-                    <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
-                </div>
-            </div>
-
             <!-- ---------- HERO-BANNER ---------- -->
             <div class="hero-banner row m-0 h-100 flex-column flex-grow-1">
                 <div class="hero-banner-content col-12 px-4 p-md-0 h-100">
-                    <div class="hero-title-container">
+                    <div class="hero-image-container">
                         <h1>Mahoning Valley Book Bazaar</h1>
-                        <p class="description">
-                            Step into a literary marketplace designed for discovery. The Mahoning Valley Book Bazaar brings together independent bookstores, creators, small presses, and passionate readers for a one-of-a-kind, magical day of literary
-                            connection. This is where your next favorite book is waiting to be found.
-                        </p>
+                        <p class="save-the-date mb-0">Save the Date</p>
                         <p class="date">November 7, 2026</p>
                     </div>
-                    <!-- <a class="accent-btn" href="#event">Learn More ↓</a> -->
+                    <a class="accent-btn" href="#signup">Sign Up for Updates</a>
                 </div>
             </div>
         </header>
 
         <!-- ---------- SECTION 1: EVENT CARDS ---------- -->
-        <section id="event" class="section-one container py-5 py-md-0">
+        <section id="event" class="section-one container-fluid py-5 py-md-0">
             <!-- ---------- EVENT INFO ---------- -->
-            <div class="event-inner row row-cols-1 row-cols-md-2 g-5">
-                <div class="col my-md-3">
+            <div class="event-inner row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mt-5 mt-md-0">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title single-line my-3 pb-4">Readers</h5>
                         <img class="card-img img-fluid" src="/assets/images/bookstore.png" alt="bookstore icon" />
-                        <div class="card-body mt-3 py-4 px-5">
-                            <p class="card-subtitle py-3">Bridging the Gap Between You & Booksellers</p>
-                            <p class="card-text description pb-3">Escape the Algorithm. Discover the stories the mainstream missed. Find a new obsession before everyone else does. Read between the trends.</p>
-                            <a class="primary-btn mb-4 d-inline-block" href="/attend">Learn More →</a>
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
+                            <h5 class="card-title pt-3 pb-5">Bridging the Gap Between You & Bookstores</h5>
+                            <p class="card-text pb-5">Visit multiple bookstores in one location.</p>
                             <p class="card-text mb-0 text-bold">The Holiday Inn Youngstown</p>
                             <p class="card-text mb-0">7410 South Avenue</p>
                             <p class="card-text pb-5">Youngstown, Ohio 44512</p>
                         </div>
                     </div>
                 </div>
-                <div class="col my-md-3">
+                <div class="col mt-5 mt-md-0">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title my-3 pb-4">Booksellers and Bookish Organizations</h5>
                         <img class="card-img img-fluid" src="/assets/images/bookCommunity.png" alt="book community icon" />
-                        <div class="card-body mt-3 py-4 px-5">
-                            <p class="card-subtitle py-3">Books Are Best Enjoyed In Community</p>
-                            <p class="card-text description pb-5">Connect with eager readers. Elevate your reach. Amplify your impact. Foster long-term customer relationships.</p>
-                            <a class="primary-btn mb-5 d-inline-block" href="/apply#vendorTables">Apply to Vend!</a>
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
+                            <h5 class="card-title pt-3 pb-5">Books Are Best Enjoyed In Community</h5>
+                            <p class="card-text pb-5">Learn about library programs and literary organizations in your area.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col my-md-3">
-                    <!-- <div class="card h-100 p-2 py-md-5 px-md-4"> -->
-                    <div class="card p-2 py-md-5 px-md-4">
-                        <h5 class="card-title single-line my-3 pb-4">Authors</h5>
-                        <img class="card-img img-fluid" src="/assets/images/bookshelf.png" alt="author talk icon" />
-                        <div class="card-body mt-3 py-4 px-5">
-                            <p class="card-subtitle single-line py-3">Your Stories Belong Here.</p>
-                            <p class="card-text description pb-5">
-                                Whether you're a celebrated headliner or a rising independent voice, the Bazaar brings you face-to-face with a community that values original storytelling. You won't just be behind a table—you'll have the opportunity
-                                to be at the heart of the conversation.
-                            </p>
-                            <a class="primary-btn mb-5 d-inline-block" href="/apply#authorTables">Apply to Vend!</a>
+                <div class="col mt-5 mt-md-0">
+                    <div class="card h-100 p-2 py-md-5 px-md-4">
+                        <img class="card-img img-fluid" src="/assets/images/authorTalk.png" alt="author talk icon" />
+                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
+                            <h5 class="card-title pt-3 pb-5">Connect with Community</h5>
+                            <p class="card-text pb-5">Participate in informal author talks and panels.</p>
                         </div>
                     </div>
                 </div>
-                <div id="senderFormContainer" class="col my-5 my-md-3">
-                    <div class="card h-100 p-2 py-md-5">
-                        <div id="signup" class="newsletter col-12">
-                            <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
-                        </div>
+            </div>
+        </section>
+
+        <!-- ---------- SECTION 1: TICKETS & NEWSLETTER SIGN-UP ---------- -->
+        <!-- <section id="tickets" class="section-two container">
+            <div class="row m-0 w-100 my-4 mt-md-4">
+                <div class="heading-container mt-5">
+                    <h2 class="title mb-3">Tickets & Updates</h2>
+                    <p class="description mb-0">Looking to connect with literary and bookish resources? Purchase early bird tickets to the Mahoning Valley Book Bazaar today!</p>
+                    <p class="description text-bold mb-md-5">Your favorite book is waiting for you...</p>
+                </div>
+                <div class="icon my-5 d-md-none">
+                    <img class="img-fluid" src="/assets/images/icon_ticket.png" alt="Application icon" />
+                </div>
+                <div class="tickets col-12 col-md-6 mb-5 mb-lg-0 pb-5 pb-md-0">
+                    <h3 class="title mt-3 pt-5">Book Lovers</h3>
+                    <p class="mb-5">If you love books and book-related things, this event will connect you with the resources to find your favorite book, literary advocates, and bookish vendors.</p>
+                    <div class="icon py-5 my-5 d-none d-md-flex">
+                        <img class="img-fluid" src="/assets/images/icon_ticket.png" alt="Application icon" />
                     </div>
+                    <a class="accent-btn" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-17574" target="_blank" alt="Buy Tickets" title="Get Tickets For This Event">Buy Tickets Now!</a>
+                </div>
+                <div id="signup" class="newsletter col-12 col-md-6">
+                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ---------- SECTION 3: VENDOR & AUTHOR APPLICATIONS ---------- -->
+        <section id="app" class="section-three container-fluid inverted">
+            <div class="row m-0 w-100 mt-4">
+                <div class="heading-container mt-5">
+                    <h2 class="title mb-3">Vendor & Author Applications</h2>
+                    <p class="description mb-5">Looking to connect with readers and community members? Apply to vend at the Bazaar!</p>
+                </div>
+                <div class="icon col-12 col-md-6 d-md-none">
+                    <img class="img-fluid" src="/assets/images/icon_app-inverted.png" alt="Application icon" />
+                </div>
+                <div class="app-inner col-12 col-md-6 pt-5 mb-5">
+                    <div class="vendors">
+                        <h3 class="title">Vendors/Organizations</h3>
+                        <p class="mb-5">
+                            Book sellers, publishers, and community organizations are vital in any reader's search for their favorite book. We'd love to make sure every reader attending our Bazaar makes a lasting connection with community resources.
+                        </p>
+                        <a class="primary-btn" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply Now!</a>
+                    </div>
+                    <div class="authors mb-3 mb-md-0">
+                        <h3 class="title">Authors</h3>
+                        <p class="mb-5">Authors' imaginations, perseverance, and willingness to share their worlds with readers is the only reason we can have events like ours. We'd love your book to be a reader's next favorite!</p>
+                        <a class="primary-btn" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply Now!</a>
+                    </div>
+                </div>
+                <!-- <div class="icon col-12 col-md-6 pt-5 d-none d-md-flex">
+                    <img class="img-fluid" src="/assets/images/icon_app-inverted.png" alt="Application icon" />
+                </div> -->
+                <div id="signup" class="newsletter col-12 col-md-6">
+                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
                 </div>
             </div>
         </section>
@@ -168,7 +174,7 @@
         <section id="thanks" class="thanks-container">
             <div class="heading">
                 <div class="img-container">
-                    <img src="/assets/images/icon_thanks-accent.png" alt="Book Heart Vectors by Vecteezy" />
+                    <img src="/assets/images/icon_thanks-wh.png" alt="Book Heart Vectors by Vecteezy" />
                 </div>
                 <h2 class="title">Special Thanks To</h2>
             </div>
@@ -210,18 +216,18 @@
             <div class="row pt-5 p-md-5">
                 <div class="info col-12 col-md-8">
                     <p class="tagline mb-5 mb-md-3">Mahoning Valley Book Bazaar</p>
-                    <p class="legal-links">
-                        <a class="unformatted-link" href="/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/terms-of-use/">Terms of Use</a><span>&nbsp;|&nbsp; </span
-                        ><a class="unformatted-link" href="/sales-policy/">Sales & Refund Policy</a>
-                    </p>
+                    <!-- <p class="legal-links">
+                        <a class="unformatted-link" href="/privacy-policy-stage.html">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/terms-of-use-stage.html">Terms of Use</a><span>&nbsp;|&nbsp; </span
+                        ><a class="unformatted-link" href="/sales-policy-stage.html">Sales & Refund Policy</a>
+                    </p> -->
                 </div>
                 <div class="connections col-12 col-md-4">
                     <div class="connections-inner">
                         <a class="footer-link mt-5 mt-md-0" href="/"><img class="img-fluid footer-logo" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                         <div class="socials">
                             <a class="social-link instagram px-4 pt-3" href="https://www.instagram.com/mvbookbazaar/" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_ig.png" alt="Instagram Logo" /></a>
-                            <a class="social-link facebook px-4 pt-3" href="https://www.facebook.com/mvbookbazaar"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a>
                             <a class="social-link tiktok px-4 pt-3" href="https://www.tiktok.com/@mahoningvalleybookbazaar" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_tiktok.png" alt="TikTok Logo" /></a>
+                            <!-- <a class="social-link facebook px-4 pt-3" href="#"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a> -->
                         </div>
                     </div>
                 </div>
@@ -251,6 +257,6 @@
         </script>
 
         <!-- CUSTOM SCRIPTS -->
-        <script type="text/javascript" src="/src/js/app.js"></script>
+        <!-- <script type="text/javascript" src="/src/js/app-stage.js"></script> -->
     </body>
 </html>
