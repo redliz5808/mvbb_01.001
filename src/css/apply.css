@@ -107,7 +107,7 @@
     transform: rotate(15deg);
     height: 6rem;
     width: 10rem;
-    margin-left: -1.15rem;
+    margin-left: -0.75rem;
 }
 
 #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
@@ -186,16 +186,15 @@
     #vendorInfo.section-one .ticket-price-container .ticket-price::after {
         font-size: 1.25rem;
         padding: 2rem 0 2rem 4rem;
-        margin-left: 0;
+        margin-left: -1rem;
         position: absolute;
-        right: 0.9rem;
-        top: 1rem;
+        top: 0.75rem;
         transform: rotate(25deg);
     }
 
-    #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
-        right: 2.2rem;
-    }
+    /* #vendorInfo.section-one .author-table .ticket-price-container .ticket-price::after {
+        margin-left: -2rem;
+    } */
 
     #vendorInfo.section-one .card-body .hint-text {
         position: relative;

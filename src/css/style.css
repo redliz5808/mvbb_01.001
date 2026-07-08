@@ -65,6 +65,10 @@ body {
     overflow-x: hidden;
 }
 
+sup {
+    font-size: 2rem;
+}
+
 .primary-btn {
     border-radius: var(--primary-radius);
     background-color: var(--dark);

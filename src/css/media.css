@@ -114,6 +114,10 @@
     align-items: center;
 }
 
+#mvbbInfo .press-releases .article {
+    margin-top: 1rem;
+}
+
 #mvbbInfo .press-releases ul a {
     font-family: var(--secondary-family);
     font-size: 1.35rem;

@@ -61,30 +61,42 @@
                 </div>
                 <div id="collapsibleNav" class="collapse navbar-collapse">
                     <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend">Attend</a>
-                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply">Apply to Vend</a> -->
+                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/#signup">Get Updates</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/attend" role="button" data-bs-toggle="dropdown" aria-expanded="false">Attend</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/stage/pages/attend">Attendee Information</a></li>
+                            <li><a class="dropdown-item" href="/stage/pages/showcase">Vendor/Author Showcase</a></li>
+                        </ul>
+                    </div>
+                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/apply">Apply to Vend</a> -->
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/apply" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendors/Authors</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/stage/pages/apply">Apply to Vend</a></li>
-                            <li><a class="dropdown-item" href="/stage/pages/media">Media Kit</a></li>
                             <li><a class="dropdown-item" href="/stage/pages/apply#vendorFaq">Vendor/Author FAQ</a></li>
-                            <li><a class="dropdown-item" href="/stage/pages/showcase">Vendor/Author Showcase</a></li>
                         </ul>
                     </div>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage#signup">Get Updates</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="/stage#contact">Contact</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle my-4 ms-3 my-md-0 mx-md-5" href="/stage/pages/media" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/stage/pages/media">Media Kit</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a>
+                        </ul>
+                    </div>
+                    
                     <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
                         <h1>Mahoning Valley Book Bazaar</h1>
                     </div>
                 </div>
             </nav>
+
             <!-- ---------- ANNOUNCEMENTS ---------- -->
             <!-- <div id="announcements" class="mb-5 mb-md-0">
                 <div class="bogo my-3">
                     <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
                     <p class="mb-5 mb-md-0">Tickets are <br class="d-md-none" /><span class="text-bold">Buy One, Get One</span></p>
-                    <p class="mb-4 mb-md-0"><a class="primary-btn px-5" href="/stage/pages/attend/">Buy Now!</a></p>
+                    <p class="mb-4 mb-md-0"><a class="primary-btn px-5" href="/attend/">Buy Now!</a></p>
                     <img class="ticket dancing-ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
                 </div>
             </div> -->
@@ -110,9 +122,26 @@
             <div class="vendor-list row mt-0 g-4">
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
-                        <img src="/assets/images/headshots/" alt="Kalynn Applewhite" class="logo img-fluid" />
+                        <img src="/assets/images/headshots/" alt="Sarah Arnette" class="logo img-fluid" />
                     </div> -->
                     <div class="bio-container">
+                        <h3 class="vendor-name">Sarah Arnette</h3>
+                        <div class="bio">
+                            <p>
+                                Sarah Arnette writes fantasy and science fiction, and is a reader of everything. She is a wife and the mommy to two loving pit bulls, and possesses an imagination big enough to power galaxies of wonder. Surrounded by
+                                her books, it was only a matter of time before their whispers found their way into her mind and began whispering stories, creating worlds that had to find their escape through her.
+                            </p>
+                        </div>
+                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
+                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
+                        <a class="text-bold unformatted-link" href="http://www.arnettebooks.com/" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
+                        <img src="/assets/images/headshots/" alt="Kalynn Applewhite" class="logo img-fluid" />
+                    </div> -->
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Kalynn Applewhite</h3>
                         <div class="bio">
                             <p>
@@ -124,12 +153,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://kalynnapplewhite.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Laura Ball" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Laura Ball</h3>
                         <div class="bio">
                             <p>
@@ -143,11 +172,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.lauraballbooks.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Chelsea Banning" class="logo img-fluid" />
                     </div> -->
+                    =
                     <div class="bio-container">
                         <h3 class="vendor-name">Chelsea Banning</h3>
                         <div class="bio">
@@ -209,11 +239,11 @@
                         <a class="text-bold unformatted-link" href="https://stories-that-inspire.com" target="_blank">Learn More →</a>
                     </div>
                 </div> -->
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Darin Darin" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Darin Darin</h3>
                         <div class="bio">
                             <p>
@@ -226,12 +256,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.darin-miller.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Elaine Evans" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Elaine Evans</h3>
                         <div class="bio">
                             <p>
@@ -244,7 +274,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.elaineevansauthor.com" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="vendor col-12 col-md-4"> -->
                 <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Cecilia A. Garcia" class="logo img-fluid" />
@@ -262,11 +292,11 @@
                         <a class="text-bold unformatted-link" href="https://www.authorceciliagarcia.com" target="_blank">Learn More →</a>
                     </div>
                 </div> -->
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Scott Geisel" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Scott Geisel</h3>
                         <div class="bio">
                             <p>
@@ -294,12 +324,29 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://scottgeisel.weebly.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                    <div class="logo-container">
+                        <img src="/assets/images/headshots/" alt="M. E. Greenfield" class="logo img-fluid" />
+                    </div>
+                    <div class="bio-container">
+                        <h3 class="vendor-name">M. E. Greenfield</h3>
+                        <div class="bio">
+                            <p>
+                                M. E. Greenfield is from NE Ohio. She is a stay-at-home mom, wife, and puppy wrangler. When she’s not fantasizing about relaxing on a hammock on the beaches of Anna Maria Island, Florida, she’s either writing her next
+                                book, reading, or crafting.
+                            </p>
+                        </div>
+                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
+                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
+                        <a class="text-bold unformatted-link" href="https://www.authormegreenfield.com/" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="J. K. Grueber" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">J. K. Grueber</h3>
                         <div class="bio">
                             <p>
@@ -319,12 +366,29 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://jkgrueber.com/" target="_blank">Learn More →</a>
                     </div>
+                </div> -->
+                <div class="vendor col-12 col-md-4">
+                    <div class="logo-container">
+                        <img src="/assets/images/headshots/headshot_CiaraHartford.jpg" alt="Ciara Hartford" class="logo img-fluid" />
+                    </div>
+                    <div class="bio-container">
+                        <h3 class="vendor-name">Ciara Hartford</h3>
+                        <div class="bio">
+                            <p>
+                                Ciara (Keara) Hartford is a Romantic Fantasy and Romantasy author of character driven stories with swords, slow burn romance, bloody action, and brutal cliffhangers. When not writing she's working on illustration and
+                                graphic design freelance, as well as reading every fantasy book she can get her hands on. She lives near Cleveland, Ohio with her mad scientist husband and amazingly talented daughter.
+                            </p>
+                        </div>
+                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
+                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
+                        <a class="text-bold unformatted-link" href="http://ciarahartford.com" target="_blank">Learn More →</a>
+                    </div>
                 </div>
                 <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Courtney N. Johnson" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <div class="bio-container">
                         <h3 class="vendor-name">Courtney N. Johnson</h3>
                         <div class="bio">
                             <p>
@@ -348,6 +412,23 @@
                 </div>
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
+                        <img src="/assets/images/headshots/" alt="Z. L. Johnson" class="logo img-fluid" />
+                    </div> -->
+                    <div class="bio-container">
+                        <h3 class="vendor-name">Z. L. Johnson</h3>
+                        <div class="bio">
+                            <p>
+                                Z.L. Johnson holds a BA in education from Cleveland State University and an MLIS from Kent State University. A healthy love of vampires, his hometown of Cleveland, and driving fictional people insane has inspired his
+                                debut A Bloody Deal. A stay at home dad, he lives in Ohio with his family and cat, Godzilla.
+                            </p>
+                        </div>
+                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
+                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
+                        <a class="text-bold unformatted-link" href="http://linktr.ee/zljohnson" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+                <div class="vendor col-12 col-md-4">
+                    <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Katie Kenyhercz" class="logo img-fluid" />
                     </div> -->
                     <div class="bio-container">
@@ -363,23 +444,6 @@
                         <button class="text-toggle expand unformatted-button mb-0">Expand</button>
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.katiekenyhercz.com" target="_blank">Learn More →</a>
-                    </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
-                        <img src="/assets/images/headshots/" alt="Z. L. Johnson" class="logo img-fluid" />
-                    </div> -->
-                    <div class="bio-container">
-                        <h3 class="vendor-name">Z. L. Johnson</h3>
-                        <div class="bio">
-                            <p>
-                                Z.L. Johnson holds a BA in education from Cleveland State University and an MLIS from Kent State University. A healthy love of vampires, his hometown of Cleveland, and driving fictional people insane has inspired his
-                                debut A Bloody Deal. A stay at home dad, he lives in Ohio with his family and cat, Godzilla.
-                            </p>
-                        </div>
-                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
-                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
-                        <a class="text-bold unformatted-link" href="http://linktr.ee/zljohnson" target="_blank">Learn More →</a>
                     </div>
                 </div>
                 <div class="vendor col-12 col-md-4">
@@ -413,11 +477,11 @@
                         <!-- <a class="text-bold unformatted-link" href="" target="_blank">Learn More →</a> -->
                     </div>
                 </div>
-                <!-- <div class="vendor col-12 col-md-4"> -->
-                <!-- <div class="logo-container">
-                        <img src="/assets/images/headshots/" alt="Courtney Leach" class="logo img-fluid" />
-                    </div> -->
-                <!-- <div class="bio-container">
+                <div class="vendor col-12 col-md-4">
+                    <div class="logo-container">
+                        <img src="/assets/images/headshots/headshot_CourtneyLeach.jpeg" alt="Courtney Leach" class="logo img-fluid" />
+                    </div>
+                    <div class="bio-container">
                         <h3 class="vendor-name">Courtney Leach</h3>
                         <div class="bio">
                             <p>
@@ -430,12 +494,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://courtneyleachauthor.com/" target="_blank">Learn More →</a>
                     </div>
-                </div> -->
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div>
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="L.A. McGinnis Books" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">L.A. McGinnis Books</h3>
                         <div class="bio">
                             <p>From the first time she picked up a book, L.A. was addicted.</p>
@@ -450,12 +514,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://lamcginnis.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Anne Natalie" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Anne Natalie</h3>
                         <div class="bio">
                             <p>Anne Natalie is an adult dark fantasy romance author, living in northeast Ohio with her husband, Husky, and three mischievous cats. She is a lifelong reader, writer, and storyteller. Checkmate is her first novel.</p>
@@ -472,11 +536,11 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://annenatalie.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
-                        <img src="/assets/images/headshots/" alt="Ann Orlandi" class="logo img-fluid" />
-                    </div> -->
+                    <div class="logo-container">
+                        <img src="/assets/images/headshots/headshot_anncorlandi.jpg" alt="Ann Orlandi" class="logo img-fluid" />
+                    </div>
                     <div class="bio-container">
                         <h3 class="vendor-name">Ann Orlandi</h3>
                         <div class="bio">
@@ -513,11 +577,11 @@
                         <a class="text-bold unformatted-link" href="https://www.vpbooks.com" target="_blank">Learn More →</a>
                     </div>
                 </div> -->
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Sarah Peterson" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Sarah Peterson</h3>
                         <div class="bio">
                             <p>
@@ -529,12 +593,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://authorsarahlindsaypeterson.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Allison Pitinii Davis, PhD" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Allison Pitinii Davis, PhD</h3>
                         <div class="bio">
                             <p>
@@ -550,12 +614,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.allisondavispoetry.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Susan Poole" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Susan Poole</h3>
                         <div class="bio">
                             <p>
@@ -570,7 +634,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://susanpooleauthor.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Michael Prelee" class="logo img-fluid" />
@@ -589,11 +653,11 @@
                         <a class="text-bold unformatted-link" href="http://www.michaelprelee.com/" target="_blank">Learn More →</a>
                     </div>
                 </div>
-                <!-- <div class="vendor col-12 col-md-4"> -->
+                <div class="vendor col-12 col-md-4">
                 <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Yajna Ramnath" class="logo img-fluid" />
                     </div> -->
-                <!-- <div class="bio-container">
+                <div class="bio-container">
                         <h3 class="vendor-name">Yajna Ramnath</h3>
                         <div class="bio">
                             <p>Yajna Ramnath writes like she’s crafting spells—equal parts beauty, danger, and a little chaos.</p>
@@ -613,7 +677,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.yajnaramnath.com" target="_blank">Learn More →</a>
                     </div>
-                </div> -->
+                </div>
                 <!-- <div class="vendor col-12 col-md-4"> -->
                 <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="Sydney Schmied" class="logo img-fluid" />
@@ -680,11 +744,11 @@
             <h2 class="section-title py-5 mb-0">Participating Vendors</h2>
 
             <div class="vendor-list row row-cols-1 row-cols-md-2 mt-0 g-4">
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Becky Books and Flinch Books.png" alt="Becky Books and Flinch Books" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Becky Books and Flinch Books</h3>
                         <div class="bio">
                             <p>
@@ -697,12 +761,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.flinchbooks.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Bluebonnet Books Publishing.png" alt="Bluebonnet Books Publishing" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Bluebonnet Books Publishing</h3>
                         <div class="bio">
                             <p>
@@ -714,27 +778,27 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.bluebonnetbookspublishing.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/The Book Nook.png" alt="The Book Nook" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">The Book Nook</h3>
                         <div class="bio">
                             <p>I am a single mom who just opened an indie author only bookstore in Warren.</p>
                         </div>
                         <br />
-                        <!-- <button class="text-toggle expand unformatted-button mb-0">Expand</button>
-                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button> -->
+                        <button class="text-toggle expand unformatted-button mb-0">Expand</button>
+                        <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://kmchaosbookreads.com" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Caesar.Ceramics.png" alt="Caesar.Ceramics" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Caesar.Ceramics</h3>
                         <div class="bio">
                             <p>
@@ -746,7 +810,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.instagram.com/caesar.ceramics/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/DMR Books.png" alt="DMR Books" class="logo img-fluid" />
@@ -764,11 +828,11 @@
                         <a class="text-bold unformatted-link" href="http://dmrbooks.com/" target="_blank">Learn More →</a>
                     </div>
                 </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Golden Light Publishing House.png" alt="Golden Light Publishing House" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Golden Light Publishing House</h3>
                         <div class="bio">
                             <p>Golden Light Publishing House is three women, a stack of books, and the kind of group chat that probably counts as a business plan at this point.</p>
@@ -782,7 +846,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.goldenlightph.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="vendor col-12 col-md-4">
                     <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Morally Gray Cafe.webp" alt="Morally Gray Cafe" class="logo img-fluid" />
@@ -800,11 +864,11 @@
                         <a class="text-bold unformatted-link" href="https://www.etsy.com/shop/morallygraycafe" target="_blank">Learn More →</a>
                     </div>
                 </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/nature-nurture.png" alt="nature+nurture" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">nature+nurture</h3>
                         <div class="bio">
                             <p>
@@ -817,12 +881,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://naturenurture.shop/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Owl Talyn Press.png" alt="Owl Talyn Press" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Owl Talyn Press</h3>
                         <div class="bio">
                             <p>
@@ -835,12 +899,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://owltalynpress.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Plot Twist Pastries.jpeg" alt="Plot Twist Pastries" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Plot Twist Pastries</h3>
                         <div class="bio">
                             <p>Two best friends, mothers, and healthcare professionals turned their shared love of literature into a charming bookish print and sweet shop.A space to savor simple pleasures, one page and one treat at a time.</p>
@@ -849,12 +913,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://plottwistpastries.etsy.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Ps and Qs Publishing.png" alt="Ps and Qs Publishing" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Ps and Qs Publishing</h3>
                         <div class="bio">
                             <p>
@@ -866,8 +930,8 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.arnettebooks.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4">
                     <div class="logo-container">
                         <img src="/assets/images/headshots/Scribbler's Den Logo.png" alt="The Scribbler's Den LLC" class="logo img-fluid" />
                     </div>
@@ -884,12 +948,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://www.scribblersden.org" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Serafine Art and Design.png" alt="Serafine Art & Design" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Serafine Art & Design</h3>
                         <div class="bio">
                             <p>
@@ -902,12 +966,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="http://serafineartanddesign.com" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/The Smitten Bakehouse.png" alt="The Smitten Bakehouse" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">The Smitten Bakehouse</h3>
                         <div class="bio">
                             <p>
@@ -919,12 +983,12 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.facebook.com/thesmittenbakehouse" target="_blank">Learn More →</a>
                     </div>
-                </div>
-                <div class="vendor col-12 col-md-4">
-                    <!-- <div class="logo-container">
+                </div> -->
+                <!-- <div class="vendor col-12 col-md-4"> -->
+                <!-- <div class="logo-container">
                         <img src="/assets/images/headshots/Tree Shadow Press.png" alt="Tree Shadow Press" class="logo img-fluid" />
                     </div> -->
-                    <div class="bio-container">
+                <!-- <div class="bio-container">
                         <h3 class="vendor-name">Tree Shadow Press</h3>
                         <div class="bio">
                             <p>Tree Shadow Press Is Dedicated to Different</p>
@@ -950,7 +1014,7 @@
                         <button class="text-toggle collapse unformatted-button mb-0">Collapse</button>
                         <a class="text-bold unformatted-link" href="https://www.treeshadowpress.com/" target="_blank">Learn More →</a>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="vendor col-12 col-md-4">
                     <div class="logo-container">
                         <img src="/assets/images/headshots/" alt="" class="logo img-fluid" />
@@ -972,7 +1036,7 @@
         <aside id="ctaAuthors" class="cta inverted container-fluid">
             <img class="ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
             <p class="mb-5 mb-md-0">Tickets are <br class="d-md-none" /><span class="text-bold">Buy One, Get One</span></p>
-            <p class="mb-4 mb-md-0"><a class="accent-btn px-5" href="/stage/pages/attend/">Buy Now!</a></p>
+            <p class="mb-4 mb-md-0"><a class="accent-btn px-5" href="/attend/">Buy Now!</a></p>
             <img class="ticket img-fluid d-none d-md-block" src="/assets/images/icon_ticket-duo.png" alt="Ticket icon" />
         </aside>
 

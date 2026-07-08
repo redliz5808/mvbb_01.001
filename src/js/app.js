@@ -26,7 +26,8 @@ if (windowWidth > 992) {
 const toggles = document.getElementsByClassName("text-toggle");
 
 for (let toggleItem of toggles) {
-    toggleItem.addEventListener("click", () => {
+    // toggleItem.addEventListener("click", () => {
+    toggleItem.addEventListener("pointerdown", () => {
         let container = toggleItem.parentElement;
         let allChildren = container.children;
 
