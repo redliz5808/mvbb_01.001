@@ -76,7 +76,7 @@
     text-align: center;
 }
 
-#eventInfo.section-one .ticket-price-container .ticket-price::after {
+/* #eventInfo.section-one .ticket-price-container .ticket-price::after {
     content: "BOGO*";
     display: inline-block;
     background-image: url(/assets/images/bogoTag.png);
@@ -90,7 +90,7 @@
     height: 6rem;
     width: 10rem;
     margin-left: -1rem;
-}
+} */
 
 #eventInfo.section-one .card-body .card-title {
     min-height: initial;
