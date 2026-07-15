@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -36,7 +36,537 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
         <!-- CUSTOM CSS -->
-        <link type="text/css" rel="stylesheet" href="/src/css/style.css" />
+        <style>
+            :root {
+                --white: #fffbf7;
+                --black: #000320;
+
+                --primary: #4f4e57;
+                --contrast: #fffbf7;
+                --secondary: #a7bbb8;
+                --secondary-contrast: var(--black);
+                --dark: var(--black);
+                --accent: #edaa29;
+                --accent-dark: #874400;
+                
+                --secondary-family: "Montserrat", sans-serif;
+                --primary-font: var(--black);
+                --secondary-font: var(--white);
+
+                --primary-field-bg: #fffbf7;
+
+                --primary-radius: 2rem;
+                --secondary-radius: 15px;
+            }
+
+            body {
+                background-color: var(--dark);
+                font-family: var(--secondary-family);
+                font-size: 1.15rem;
+                overflow-x: hidden;
+            }
+            
+            .primary-btn {
+                border-radius: var(--primary-radius);
+                background-color: var(--dark);
+                color: var(--contrast);
+                border: 1px solid var(--dark);
+                font-family: var(--secondary-family);
+                font-size: 1.25rem;
+                outline: 0;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .primary-btn:hover {
+                background-color: var(--contrast);
+                color: var(--dark);
+            }
+
+            .accent-btn {
+                border: 1px solid var(--accent-dark);
+                border-radius: var(--primary-radius);
+                background-color: var(--accent);
+                font-family: var(--secondary-family);
+                font-weight: 500;
+                color: var(--primary-font);
+                font-size: 1.25rem;
+                text-align: center;
+                outline: 0;
+                cursor: pointer;
+                padding: 1.15rem 4.38rem;
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                width: fit-content;
+            }
+
+            .accent-btn:hover {
+                background-color: var(--contrast);
+                color: var(--dark);
+                border: 1px solid var(--accent-dark);
+            }
+
+            @media screen and (max-width: 992px) {
+                .accent-btn {
+                    padding: 0.75rem 3.38rem;
+                }
+            }
+
+            /* *********** HEADER *********** */
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                min-height: 80vh;
+                padding: 1.15rem 4rem;
+            }
+
+            /* ********** MAIN NAV ********** */
+
+            #mainNav {
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mainNav.expanded {
+                background-color: var(--secondary);
+            }
+
+            .main-nav .nav-logo {
+                max-height: 6.25rem;
+            }
+
+            .main-nav .nav-logo.dark,
+            .main-nav.expanded .nav-logo.dark {
+                display: none;
+            }
+
+            #collapsibleNav {
+                flex-basis: initial !important;
+                justify-content: flex-end;
+                align-items: end;
+                width: 80%;
+            }
+
+            #navLogoMobileMenu {
+                position: absolute;
+                bottom: 4rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .main-nav.expanded #navLogoMobileMenu {
+                display: inline;
+            }
+
+            .main-nav #collapsibleNav.show .nav-link {
+                color: var(--primary-font);
+                font-size: 2.5rem;
+            }
+
+            #navLogoMobileMenu .nav-logo {
+                max-width: 18.75rem;
+                margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: 992px) {
+                .header {
+                    padding: 0 0 1.15rem 0;
+                }
+
+                .main-nav {
+                    background-color: var(--contrast);
+                    padding: 1.25rem;
+                }
+
+                .main-nav .nav-logo-container.light {
+                    display: none;
+                }
+
+                .main-nav .nav-logo {
+                    max-width: 12.75rem;
+                }
+
+                .main-nav .nav-logo.dark {
+                    display: inline;
+                }
+
+                .main-nav.expanded .navbar-brand .nav-logo.dark,
+                .main-nav.expanded .nav-logo.light {
+                    display: none;
+                }
+
+                .main-nav.expanded .nav-logo.dark {
+                    display: inline;
+                }
+
+                #collapsibleNav {
+                    flex-basis: 100% !important;
+                    position: relative;
+                    height: calc(100vh - 125px);
+                    padding-top: 2rem;
+                }
+
+                .main-nav .navbar-toggler {
+                    border: none;
+                    outline: 0;
+                }
+
+                .main-nav .navbar-toggler-icon {
+                    color: var(--dark);
+                    background-image: url(/assets/images/icon_menu.png);
+                    height: 1.25rem;
+                    width: 1.25rem;
+                }
+
+                .main-nav .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+                    background-image: url(/assets/images/icon_menu-close-bk.png);
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                .main-nav.expanded .nav-logo.light {
+                    display: inline;
+                }
+            }
+
+            /* ********** HERO BANNER: OPTION A ********** */
+
+            .hero-banner-content {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hero-banner h1,
+            .hero-banner p {
+                color: var(--accent);
+                text-align: center;
+            }
+
+            .hero-banner h1 {
+                font-weight: 700;
+                font-size: 2.5rem;
+                line-height: 4.81rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-banner p {
+                font-size: 2rem;
+                color: var(--secondary-font);
+            }
+
+            @media screen and (max-width: 992px) {
+                .hero-banner {
+                    margin-left: 0;
+                }
+
+                .hero-banner-content {
+                    align-items: center;
+                }
+
+                .hero-banner h1,
+                .hero-banner p {
+                    margin-left: 0;
+                }
+
+                .hero-banner h1 {
+                    line-height: 3.81rem;
+                }
+            }
+
+            /* ********** SECTION 1: Important Links ********** */
+
+            #importantLinks {
+                min-height: 75vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 5rem;
+            }
+
+            #importantLinks .card {
+                border: none;
+                outline: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #importantLinks .card-title {
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+                font-family: var(--secondary-family);
+            }
+
+            #importantLinks .card-body {
+                color: var(--primary-font);
+                border-radius: var(--secondary-radius);
+            }
+
+            #importantLinks .card-body .card-subtitle {
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: var(--secondary-family);
+            }
+
+            #importantLinks .card-title.single-line,
+            #importantLinks .card-subtitle.single-line {
+                line-height: 2.4;
+            }
+
+            #importantLinks .card-body .card-text {
+                font-size: 1.25rem;
+                font-family: var(--secondary-family);
+                font-weight: 500;
+            }
+
+            #importantLinks .card-body .card-text.description {
+                min-height: 8rem;
+            }
+
+            #importantLinks .card-body .card-text.text-bold {
+                font-weight: 700;
+            }
+
+            #importantLinks .card-footer {
+                background-color: transparent;
+                border: none;
+            }
+
+            @media screen and (max-width: 972px) {
+                #importantLinks {
+                    margin-bottom: 0;
+                }
+
+                #importantLinks .card-body .card-subtitle {
+                    min-height: auto;
+                }
+
+                #importantLinks .card-img {
+                    margin-top: 1.25rem;
+                }
+
+                #importantLinks .card-title.single-line,
+                #importantLinks .card-subtitle.single-line {
+                    line-height: initial;
+                }
+            }
+
+            /* ********** CONTACT US ********** */
+
+            .contact-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: var(--transparent);
+                padding: 4.83rem 10rem;
+                font-family: var(--secondary-family);
+                font-weight: 500;
+            }
+
+            .contact-container.inverted {
+                background-color: var(--primary-field-bg);
+                box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+                z-index: 10;
+                position: relative;
+            }
+
+            .contact-container .info-container,
+            .contact-container .info-container {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .contact-container .info-container img {
+                max-width: 1.8rem;
+                margin-right: 2.88rem;
+            }
+
+            .contact-container .info-container .contact-info a,
+            .contact-container .info-container .contact-info p {
+                color: var(--secondary-font);
+                text-decoration: none;
+            }
+
+            .contact-container.inverted .info-container .contact-info a,
+            .contact-container.inverted .info-container .contact-info p {
+                color: var(--primary-font);
+            }
+
+            .contact-container .info-container .contact-info a,
+            .contact-container .info-container .contact-info p {
+                color: var(--secondary-font);
+            }
+
+            .contact-container.inverted .info-container .contact-info a,
+            .contact-container.inverted .info-container .contact-info p {
+                color: var(--primary-font);
+            }
+
+            .contact-container .info-container .contact-info a:hover {
+                color: var(--secondary-font);
+                text-decoration: underline;
+            }
+
+            .contact-container.inverted .info-container .contact-info a:hover {
+                color: var(--primary-font);
+            }
+
+            .border-container {
+                height: 2px;
+                background-color: var(--secondary);
+            }
+
+            .border-container .border-box {
+                margin: 0 8rem;
+                border-bottom: 1px solid var(--white);
+            }
+
+            @media screen and (max-width: 1500px) {
+                .contact-container {
+                    padding: 4.83rem 5rem;
+                }
+
+                .border-container .border-box {
+                    margin: 0 3rem;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                .contact-container {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                }
+
+                .contact-container .info-container img {
+                    max-width: 1.8rem;
+                    margin: 1rem 1rem 1rem 0;
+                }
+
+                .border-container .border-box {
+                    margin: 0;
+                    border-bottom: 1px solid var(--white);
+                }
+            }
+
+            /* ********** FOOTER ********** */
+
+            footer {
+                background-color: var(--primary);
+                color: var(--secondary-font);
+            }
+
+            footer .tagline {
+                font-size: 2.25rem;
+                font-weight: 700;
+                max-width: 17.5rem;
+                line-height: 1.3;
+            }
+
+            footer .legal-links {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            footer .legal-links,
+            footer a,
+            footer a.unformatted-link,
+            footer a.unformatted-button {
+                color: var(--secondary-font);
+            }
+
+            footer .connections {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            footer .connections .connections-inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer .footer-link.logo {
+                justify-content: center;
+            }
+
+            footer .connections .footer-logo {
+                max-height: 3.75rem;
+            }
+
+            footer .connections .socials {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer .connections .social-icon {
+                max-width: 1.56rem;
+            }
+
+            footer .footer-link {
+                color: var(--primary-font);
+                font-size: 1rem;
+                font-weight: 200;
+                text-decoration: none;
+            }
+
+            footer .footer-link:hover {
+                text-decoration: underline;
+            }
+
+            footer .designer-credit {
+                text-align: end;
+                padding-right: 13.25rem;
+            }
+
+            @media screen and (max-width: 992px) {
+                footer {
+                    padding-bottom: 2rem;
+                }
+
+                footer .info {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                footer .connections {
+                    align-items: center;
+                }
+
+                footer .tagline {
+                    text-align: center;
+                }
+
+                footer .designer-credit {
+                    text-align: center;
+                    padding-right: 0;
+                }
+
+                footer .legal-links {
+                    font-size: 1.15rem;
+                }
+            }
+        </style>
     </head>
     <body id="home">
         <!-- ---------- HEADER ---------- -->
@@ -47,148 +577,66 @@
                     <a class="nav-logo-container light" href="/"><img id="navLogoLight" class="nav-logo light img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                     <a class="nav-logo-container dark" href="/"><img id="navLogoDark" class="nav-logo dark img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                 </div>
-                <div class="d-md-none me-3">
-                    <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span id="navbarTogglerBtn" class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div id="collapsibleNav" class="collapse navbar-collapse">
-                    <!-- <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#tickets">Buy Tickets</a> -->
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#app">Apply to Vend</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#signup">Get Updates</a>
-                    <a class="nav-link my-4 ms-3 my-md-0 mx-md-5" href="#contact">Contact</a>
-                    <div id="navLogoMobileMenu" class="d-flex d-md-none flex-column justify-content-end align-items-center">
-                        <h1>Mahoning Valley Book Bazaar</h1>
-                    </div>
-                </div>
             </nav>
             <!-- ---------- HERO-BANNER ---------- -->
             <div class="hero-banner row m-0 h-100 flex-column flex-grow-1">
                 <div class="hero-banner-content col-12 px-4 p-md-0 h-100">
                     <div class="hero-image-container">
                         <h1>Mahoning Valley Book Bazaar</h1>
-                        <p class="save-the-date mb-0">Save the Date</p>
-                        <p class="date">November 7, 2026</p>
+                        <p class="mb-0">Our website is currently being updated.</p>
+                        <p>We appreciate your patience while we bring you all the latest information.</p>
                     </div>
-                    <a class="accent-btn" href="#signup">Sign Up for Updates</a>
                 </div>
             </div>
         </header>
 
-        <!-- ---------- SECTION 1: EVENT CARDS ---------- -->
-        <section id="event" class="section-one container-fluid py-5 py-md-0">
-            <!-- ---------- EVENT INFO ---------- -->
-            <div class="event-inner row row-cols-1 row-cols-md-3 g-4">
-                <div class="col mt-5 mt-md-0">
+        <section id="importantLinks" class="contianer-fluid">
+            <div class="row row-cols-1 row-cols-md-2 g-5">
+                <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <img class="card-img img-fluid" src="/assets/images/bookstore.png" alt="bookstore icon" />
-                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
-                            <h5 class="card-title pt-3 pb-5">Bridging the Gap Between You & Bookstores</h5>
-                            <p class="card-text pb-5">Visit multiple bookstores in one location.</p>
-                            <p class="card-text mb-0 text-bold">The Holiday Inn Youngstown</p>
-                            <p class="card-text mb-0">7410 South Avenue</p>
-                            <p class="card-text pb-5">Youngstown, Ohio 44512</p>
+                        <h5 class="card-title single-line pt-5 pt-md-0">Attend</h5>
+                        <div class="card-body py-4 px-5">
+                            <p class="card-subtitle pb-5">Looking to find your next favorite book?</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="primary-btn mb-5 d-inline-block" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-17574" target="_blank">Buy Tickets</a>
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5 mt-md-0">
+                <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <img class="card-img img-fluid" src="/assets/images/bookCommunity.png" alt="book community icon" />
-                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
-                            <h5 class="card-title pt-3 pb-5">Books Are Best Enjoyed In Community</h5>
-                            <p class="card-text pb-5">Learn about library programs and literary organizations in your area.</p>
+                        <h5 class="card-title single-line pt-5 pt-md-0">Updates</h5>
+                        <div class="card-body py-4 px-5">
+                            <p class="card-subtitle pb-5">Be the first to know what's happening at the Bazaar.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="primary-btn mb-5 d-inline-block" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">Sign up for Updates!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col mt-5 mt-md-0">
+                <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <img class="card-img img-fluid" src="/assets/images/authorTalk.png" alt="author talk icon" />
-                        <div class="card-body mt-3 mt-md-5 py-4 px-5">
-                            <h5 class="card-title pt-3 pb-5">Connect with Community</h5>
-                            <p class="card-text pb-5">Participate in informal author talks and panels.</p>
+                        <h5 class="card-title single-line pt-5 pt-md-0">Authors</h5>
+                        <div class="card-body py-4 px-5">
+                            <p class="card-subtitle pb-5">We're accepting applications from authors with a connection to the Valley. We'd love for our attendees to find their next favorite book at your table.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply to Vend!</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- ---------- SECTION 1: TICKETS & NEWSLETTER SIGN-UP ---------- -->
-        <!-- <section id="tickets" class="section-two container">
-            <div class="row m-0 w-100 my-4 mt-md-4">
-                <div class="heading-container mt-5">
-                    <h2 class="title mb-3">Tickets & Updates</h2>
-                    <p class="description mb-0">Looking to connect with literary and bookish resources? Purchase early bird tickets to the Mahoning Valley Book Bazaar today!</p>
-                    <p class="description text-bold mb-md-5">Your favorite book is waiting for you...</p>
-                </div>
-                <div class="icon my-5 d-md-none">
-                    <img class="img-fluid" src="/assets/images/icon_ticket.png" alt="Application icon" />
-                </div>
-                <div class="tickets col-12 col-md-6 mb-5 mb-lg-0 pb-5 pb-md-0">
-                    <h3 class="title mt-3 pt-5">Book Lovers</h3>
-                    <p class="mb-5">If you love books and book-related things, this event will connect you with the resources to find your favorite book, literary advocates, and bookish vendors.</p>
-                    <div class="icon py-5 my-5 d-none d-md-flex">
-                        <img class="img-fluid" src="/assets/images/icon_ticket.png" alt="Application icon" />
+                <div class="col my-md-3">
+                    <div class="card h-100 p-2 py-md-5 px-md-4">
+                        <h5 class="card-title single-line pt-5 pt-md-0">Booksellers / <br class="d-md-none"/> Bookish Orgs</h5>
+                        <div class="card-body py-4 px-5">
+                            <p class="card-subtitle pb-5">
+                                We're also accepting applications from booksellers and community organizations focused on helping readers find their next favorite book. We'd love to see our attendees creating lasting connections with you.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply to Vend!</a>
+                        </div>
                     </div>
-                    <a class="accent-btn" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-17574" target="_blank" alt="Buy Tickets" title="Get Tickets For This Event">Buy Tickets Now!</a>
-                </div>
-                <div id="signup" class="newsletter col-12 col-md-6">
-                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- ---------- SECTION 3: VENDOR & AUTHOR APPLICATIONS ---------- -->
-        <section id="app" class="section-three container-fluid inverted">
-            <div class="row m-0 w-100 mt-4">
-                <div class="heading-container mt-5">
-                    <h2 class="title mb-3">Vendor & Author Applications</h2>
-                    <p class="description mb-5">Looking to connect with readers and community members? Apply to vend at the Bazaar!</p>
-                </div>
-                <div class="icon col-12 col-md-6 d-md-none">
-                    <img class="img-fluid" src="/assets/images/icon_app-inverted.png" alt="Application icon" />
-                </div>
-                <div class="app-inner col-12 col-md-6 pt-5 mb-5">
-                    <div class="vendors">
-                        <h3 class="title">Vendors/Organizations</h3>
-                        <p class="mb-5">
-                            Book sellers, publishers, and community organizations are vital in any reader's search for their favorite book. We'd love to make sure every reader attending our Bazaar makes a lasting connection with community resources.
-                        </p>
-                        <a class="primary-btn" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply Now!</a>
-                    </div>
-                    <div class="authors mb-3 mb-md-0">
-                        <h3 class="title">Authors</h3>
-                        <p class="mb-5">Authors' imaginations, perseverance, and willingness to share their worlds with readers is the only reason we can have events like ours. We'd love your book to be a reader's next favorite!</p>
-                        <a class="primary-btn" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply Now!</a>
-                    </div>
-                </div>
-                <!-- <div class="icon col-12 col-md-6 pt-5 d-none d-md-flex">
-                    <img class="img-fluid" src="/assets/images/icon_app-inverted.png" alt="Application icon" />
-                </div> -->
-                <div id="signup" class="newsletter col-12 col-md-6">
-                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="aKrVKl"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ---------- SPECIAL THANKS ---------- -->
-        <section id="thanks" class="thanks-container">
-            <div class="heading">
-                <div class="img-container">
-                    <img src="/assets/images/icon_thanks-wh.png" alt="Book Heart Vectors by Vecteezy" />
-                </div>
-                <h2 class="title">Special Thanks To</h2>
-            </div>
-
-            <div class="thanks-list mt-5 px-3 px-md-0">
-                <div class="thanks-item">
-                    <h3>Samantha Ensminger</h3>
-                    <p>For consultation services.</p>
-                </div>
-                <div class="thanks-item">
-                    <a class="unformatted-link" href="https://www.lityoungstown.org/" target="_blank"
-                        ><h3>Karen Schubert & Lit Youngstown</h3>
-                        <p>For consistent support provided to the literary community.</p>
-                    </a>
                 </div>
             </div>
         </section>
@@ -216,18 +664,14 @@
             <div class="row pt-5 p-md-5">
                 <div class="info col-12 col-md-8">
                     <p class="tagline mb-5 mb-md-3">Mahoning Valley Book Bazaar</p>
-                    <!-- <p class="legal-links">
-                        <a class="unformatted-link" href="/privacy-policy-stage.html">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/terms-of-use-stage.html">Terms of Use</a><span>&nbsp;|&nbsp; </span
-                        ><a class="unformatted-link" href="/sales-policy-stage.html">Sales & Refund Policy</a>
-                    </p> -->
                 </div>
                 <div class="connections col-12 col-md-4">
                     <div class="connections-inner">
                         <a class="footer-link mt-5 mt-md-0" href="/"><img class="img-fluid footer-logo" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                         <div class="socials">
                             <a class="social-link instagram px-4 pt-3" href="https://www.instagram.com/mvbookbazaar/" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_ig.png" alt="Instagram Logo" /></a>
+                            <a class="social-link facebook px-4 pt-3" href="https://www.facebook.com/mvbookbazaar"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a>
                             <a class="social-link tiktok px-4 pt-3" href="https://www.tiktok.com/@mahoningvalleybookbazaar" target="_blank"><img class="img-fluid social-icon" src="/assets/images/icon_tiktok.png" alt="TikTok Logo" /></a>
-                            <!-- <a class="social-link facebook px-4 pt-3" href="#"><img class="img-fluid social-icon" src="/assets/images/icon_fb.png" alt="Facebook Logo" /></a> -->
                         </div>
                     </div>
                 </div>
@@ -255,8 +699,5 @@
             })(window, document, "script", "https://cdn.sender.net/accounts_resources/universal.js", "sender");
             sender("5e91f040d16206");
         </script>
-
-        <!-- CUSTOM SCRIPTS -->
-        <!-- <script type="text/javascript" src="/src/js/app-stage.js"></script> -->
     </body>
 </html>
