@@ -224,9 +224,16 @@
 }
 
 .section-two .accordion-body p,
-.section-two .accordion-body ul {
+.section-two .accordion-body ol,
+.section-two .accordion-body ul,
+.section-two .accordion-body li {
     font-family: var(--secondary-family);
     font-size: 1.15rem;
+}
+
+.section-two .accordion-body p,
+.section-two .accordion-body ol,
+.section-two .accordion-body ul {
     margin-left: 0;
     padding-left: 0;
 }

@@ -167,6 +167,10 @@ sup {
     font-size: 0.9rem;
 }
 
+.text-italic {
+    font-style: italic;
+}
+
 @media screen and (max-width: 992px) {
     .accent-btn {
         padding: 0.75rem 3.38rem;
