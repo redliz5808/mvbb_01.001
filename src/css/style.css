@@ -245,10 +245,12 @@ sup {
 }
 
 #navLogoMobileMenu {
-    position: absolute;
+    /* position: absolute;
     bottom: 4rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
+    margin-top: 22rem;
+    margin-bottom: 3rem;
 }
 
 .main-nav.expanded #navLogoMobileMenu {
@@ -266,10 +268,19 @@ sup {
 }
 
 #navLogoMobileMenu h1 {
-    font-weight: 200;
+    font-weight: 600;
     font-size: 2rem;
     color: var(--dark);
     text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    #collapsibleNav {
+        flex-basis: 100% !important;
+        position: relative;
+        /* height: calc(100vh - 125px); */
+        padding-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -306,7 +317,7 @@ sup {
     #collapsibleNav {
         flex-basis: 100% !important;
         position: relative;
-        height: calc(100vh - 125px);
+        /* height: calc(100vh - 125px); */
         padding-top: 2rem;
     }
 
@@ -501,6 +512,10 @@ sup {
     .hero-banner p {
         font-size: 2.75rem;
     }
+
+    .hero-banner p.description {
+    max-width: 650px;
+}
 }
 
 /* ********** SECTION 1: OPTION A ********** */
