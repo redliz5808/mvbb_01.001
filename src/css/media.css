@@ -271,7 +271,7 @@
     #mvbbInfo ul {
         padding: 0 1rem;
     } */
-/* 
+    /* 
     #mvbbInfo ul li {
         padding-right: 2rem;
     } */
@@ -291,6 +291,7 @@
     #mvbbInfo .images .image-repository .download-link,
     #mvbbInfo .images .image-repository .download-link.large-img {
         width: 100%;
+        filter: contrast(100%) grayscale(0%);
     }
 
     #mvbbInfo .mk-contact-info p {
@@ -347,7 +348,7 @@
         font-size: 1rem;
     }
 
-    #media #ctaAuthors.cta {
+    #media #ctaBogo.cta {
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -225,7 +225,7 @@
         font-size: 1rem;
     }
 
-    #showcase #ctaAuthors.cta {
+    #showcase #ctaBogo.cta {
         display: flex;
         flex-direction: column;
         justify-content: center;
