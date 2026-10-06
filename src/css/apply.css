@@ -29,6 +29,31 @@
     position: relative;
 }
 
+.vendor-info-inner .vendor-table,
+.vendor-info-inner .author-table {
+    position: relative;
+    overflow: hidden;
+}
+
+.vendor-info-inner .stamp-container {
+    position: absolute;
+    height: 10rem;
+    width: 150%;
+    z-index: 10;
+    left: 50%;
+    top: 0.5rem;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%) rotate(8deg);
+}
+
+.vendor-info-inner .vendor-table .stamp-container .stamp,
+.vendor-info-inner .author-table .stamp-container .stamp {
+    max-width: 10rem;
+}
+
 #vendorInfo.section-one .card-body .hint-text {
     font-family: var(--secondary-family);
     font-size: 1rem;
@@ -152,10 +177,6 @@
     #vendorInfo .vendor-info-inner {
         display: flex;
         flex-direction: column;
-    }
-
-    #vendorInfo .vendor-info-inner #vendorTables {
-        order: 1;
     }
 
     #vendorInfo .vendor-info-inner .vendor-description {
