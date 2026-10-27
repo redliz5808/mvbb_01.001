@@ -167,6 +167,10 @@ sup {
     color: var(--accent);
 }
 
+.accent-text-dk {
+    color: var(--accent-dark);
+}
+
 .text-bold {
     font-weight: 600;
 }
