@@ -80,6 +80,14 @@
                 transition: all 0.3s ease-in-out;
             }
 
+            .primary-btn.disabled {
+                background-color: var(--primary);
+                border: 1px solid var(--primary);
+                pointer-events: none;
+                text-decoration: none;
+                cursor: not-allowed;
+            }
+
             .primary-btn:hover {
                 background-color: var(--contrast);
                 color: var(--dark);
@@ -102,10 +110,33 @@
                 width: fit-content;
             }
 
+            .accent-btn.disabled {
+                background-color: var(--primary);
+                border: 1px solid var(--primary);
+                pointer-events: none;
+                text-decoration: none;
+                cursor: not-allowed;
+            }
+
             .accent-btn:hover {
                 background-color: var(--contrast);
                 color: var(--dark);
                 border: 1px solid var(--accent-dark);
+            }
+
+            .unformatted-link,
+            .unformatted-button {
+                color: initial;
+                text-decoration: initial;
+            }
+
+            .unformatted-link:hover,
+            .unformatted-button:hover {
+                text-decoration: underline;
+            }
+
+            .text-bold {
+                font-weight: 600;
             }
 
             @media screen and (max-width: 992px) {
@@ -338,6 +369,39 @@
             #importantLinks .card-footer {
                 background-color: transparent;
                 border: none;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #importantLinks .col {
+                /* position: relative; */
+                overflow: hidden;
+            }
+
+            #event.section-one .col .card {
+                overflow: hidden;
+            }
+
+            #importantLinks .stamp-container {
+                /* position: absolute; */
+                height: 10rem;
+                width: 100%;
+                z-index: 10;
+                left: 1rem;
+                bottom: 2rem;
+                background-color: var(--accent);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* transform: rotate(-45deg); */
+            }
+
+            #importantLinks .stamp-container .stamp {
+                max-width: 10rem;
+                /* transform: rotate(45deg); */
+                padding: 1rem;
             }
 
             @media screen and (max-width: 972px) {
@@ -596,7 +660,8 @@
                     <div class="card h-100 p-2 py-md-5 px-md-4">
                         <h5 class="card-title single-line pt-5 pt-md-0">Attend</h5>
                         <div class="card-body py-4 px-5">
-                            <p class="card-subtitle pb-5">Looking to find your next favorite book?</p>
+                            <p class="card-subtitle pb-0 mb-0 text-center">Escape the Algorithm.</p>
+                            <p class="card-subtitle pb-5 text-center">Find your next favorite book.</p>
                         </div>
                         <div class="card-footer">
                             <a class="primary-btn mb-5 d-inline-block" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-17574" target="_blank">Buy Tickets</a>
@@ -618,10 +683,17 @@
                     <div class="card h-100 p-2 py-md-5 px-md-4">
                         <h5 class="card-title single-line pt-5 pt-md-0">Authors</h5>
                         <div class="card-body py-4 px-5">
-                            <p class="card-subtitle pb-5">We're accepting applications from authors with a connection to the Valley. We'd love for our attendees to find their next favorite book at your table.</p>
+                            <p class="card-subtitle pb-5">
+                                Although we've sold out of author tables, we'd love to meet you! Swing by the Bazaar to say hi or
+                                <a class="unformatted-link text-bold" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">sign up for updates</a> so you can be the first to know when applications open for the 2027 Bazaar.
+                            </p>
                         </div>
                         <div class="card-footer">
-                            <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply to Vend!</a>
+                            <!-- <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply to Vend!</a> -->
+                            <div class="stamp-container">
+                                <img class="stamp img-fluid" src="/assets/images/soldoutstamp-dark.png" alt="sold out stamp in yellow-orange" />
+                            </div>
+                            <!-- <a class="primary-btn mb-5 d-inline-block disabled" href="#" target="_blank">Apply to Vend!</a> -->
                         </div>
                     </div>
                 </div>
@@ -633,11 +705,16 @@
                         </h5>
                         <div class="card-body py-4 px-5">
                             <p class="card-subtitle pb-5">
-                                We're also accepting applications from booksellers and community organizations focused on helping readers find their next favorite book. We'd love to see our attendees creating lasting connections with you.
+                                Although we've sold out of vendor tables, we'd love to learn more about you! Swing by the Bazaar to say hi or
+                                <a class="unformatted-link text-bold" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">sign up for updates</a> so you can be the first to know when applications open for the 2027 Bazaar.
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply to Vend!</a>
+                            <!-- <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply to Vend!</a> -->
+                            <!-- <a class="primary-btn mb-5 d-inline-block disabled" href="#" target="_blank">Apply to Vend!</a> -->
+                            <div class="stamp-container">
+                                <img class="stamp img-fluid" src="/assets/images/soldoutstamp-dark.png" alt="sold out stamp in yellow-orange" />
+                            </div>
                         </div>
                     </div>
                 </div>
