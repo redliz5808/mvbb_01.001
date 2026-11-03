@@ -67,6 +67,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/attend">Attendee Information</a></li>
                             <li><a class="dropdown-item" href="/showcase">Vendor/Author Showcase</a></li>
+                            <li><a class="dropdown-item" href="/attend#bookshelf">Vendor/Author Map</a></li>
                         </ul>
                     </div>
                     <!-- <a class="nav-link my-4 ms-3 my-lg-0 mx-lg-5" href="/apply">Apply to Vend</a> -->
@@ -75,6 +76,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/apply">Apply to Vend</a></li>
                             <li><a class="dropdown-item" href="/apply#vendorFaq">Vendor/Author FAQ</a></li>
+                            <li><a class="dropdown-item" href="https://mvbookbazaar.com/assets/files/MVBB_2026Load-InInstructions.pdf" target="_blank">Load-In Instructions</a></li>
                         </ul>
                     </div>
                     <div class="nav-item dropdown">
@@ -222,69 +224,9 @@
             <div class="accordion accordion-flush" id="faqContainer">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#appNotifications" aria-expanded="true" aria-controls="appNotifications">
-                            I've submitted an application. When should I receive notification as to whether it's been accepted?
-                        </button>
+                        <button class="accordion-button px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#feeInclusion" aria-expanded="false" aria-controls="feeInclusion">What's included in the fee?</button>
                     </h2>
-                    <div id="appNotifications" class="accordion-collapse collapse show" data-bs-parent="#faqContainer">
-                        <div class="accordion-body">
-                            <div class="accordion-content px-3 px-lg-5 py-3">
-                                <p class="mb-0">We are a small, but agile team. If you haven't heard from us yet, we are likely still reviewing your application. We promise we will reach out as soon as we've made a decision.</p>
-                                <ol class="mt-3">
-                                    <p class="mb-0 text-bold">Take the following steps to ensure you haven't missed any communications:</p>
-                                    <li>Add <span class="text-italic">hello@mvbookbazaar.com</span> to your safe senders list / whitelist.</li>
-                                    <li>Check your spam/junk folder for our messages.</li>
-                                    <li>
-                                        Reach out to our team directly by emailing <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> or calling
-                                        <a class="unformatted-link" href="tel:+13303609696" target="_blank">(330) 360-9696</a>.
-                                    </li>
-                                </ol>
-                                <p>If you're concerned there was an issue with your application, please email us at <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#tableCost" aria-expanded="false" aria-controls="tableCost">How much does a table cost?</button>
-                    </h2>
-                    <div id="tableCost" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
-                        <div class="accordion-body">
-                            <div class="accordion-content px-3 px-lg-5 py-3">
-                                <p>We have 2 types of tables available: vendor and author.</p>
-                                <ul>
-                                    <li><span class="text-bold">Vendor Tables:</span> $100.00 full price / $75.00 early bird</li>
-                                    <li><span class="text-bold">Author Tables:</span> $50.00 full price / $35.00 early bird</li>
-                                </ul>
-                                <p>Early bird pricing is available for vendors and authors who are accepted and submit payment of their table fee by 07/31/2026.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#vendorOrAuthor" aria-expanded="false" aria-controls="vendorOrAuthor">
-                            How do I know if I need a Vendor Table or an Author Table?
-                        </button>
-                    </h2>
-                    <div id="vendorOrAuthor" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
-                        <div class="accordion-body">
-                            <div class="accordion-content px-3 px-lg-5 py-3">
-                                <p>If you are representing books you have written, we ask that you apply as an <a class="unformatted-link" href="#authorTables">author</a>.</p>
-                                <p>If you are a bookseller, literary organization, press/publisher, or similar, we ask that you apply as a <a class="unformatted-link" href="#vendorTables">vendor</a>.</p>
-                                <p class="mb-0">
-                                    A limited number of vendor tables may be available to appropriate authors. If you are interested in upgrading to a vendor table, please email us at
-                                    <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> upon your application's acceptance.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#feeInclusion" aria-expanded="false" aria-controls="feeInclusion">What's included in the fee?</button>
-                    </h2>
-                    <div id="feeInclusion" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                    <div id="feeInclusion" class="accordion-collapse collapse show" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-lg-5 py-3">
                                 <ul>
@@ -487,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div id="loadInInstructions" class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#tableSetup" aria-expanded="false" aria-controls="tableSetup">
                             When can I set up my table and will MVBB provide assistance?
@@ -496,7 +438,8 @@
                     <div id="tableSetup" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
                         <div class="accordion-body">
                             <div class="accordion-content px-3 px-lg-5 py-3">
-                                <p class="mb-0">Detailed instructions will be emailed to you prior to the Bazaar. While volunteers may be available to assist you, please bring enough staff to ensure timely set-up.</p>
+                                <p class="mb-0">Detailed instructions have been emailed to all confirmed authors and vendors. If you did not receive the email, please check your spam/junk folder or reach out to us using the <a href="#contact" class="unformatted-link">contact information</a> below.</p>
+                                <p class="mb-0">You can view the <a class="unformatted-link" href="https://mvbookbazaar.com/assets/files/MVBB_2026Load-InInstructions.pdf" target="_blank">full load-in instructions here</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -541,6 +484,65 @@
                                     and, finally, at 3PM. Depending on the number of baskets, there may be multiple winners at each announcement. Attendees must be present to win.
                                 </p>
                                 <p>All profits from the basket raffles will be donated to local literary nonprofit, <a class="unformatted-link" href="https://lityoungstown.org" target="_blank">Lit Youngstown</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#appNotifications" aria-expanded="false" aria-controls="appNotifications">
+                            I've submitted an application. When should I receive notification as to whether it's been accepted?
+                        </button>
+                    </h2>
+                    <div id="appNotifications" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-lg-5 py-3">
+                                <p class="mb-0">We've have sent all acceptances and are completely sold out. We're sorry we weren't able to host you this year, but hope you will apply again in 2027!</p>
+                                <!-- <ol class="mt-3">
+                                    <p class="mb-0 text-bold">Take the following steps to ensure you haven't missed any communications:</p>
+                                    <li>Add <span class="text-italic">hello@mvbookbazaar.com</span> to your safe senders list / whitelist.</li>
+                                    <li>Check your spam/junk folder for our messages.</li>
+                                    <li>
+                                        Reach out to our team directly by emailing <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> or calling
+                                        <a class="unformatted-link" href="tel:+13303609696" target="_blank">(330) 360-9696</a>.
+                                    </li>
+                                </ol>
+                                <p>If you're concerned there was an issue with your application, please email us at <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a>.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#tableCost" aria-expanded="false" aria-controls="tableCost">How much does a table cost?</button>
+                    </h2>
+                    <div id="tableCost" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-lg-5 py-3">
+                                <p>We have 2 types of tables available: vendor and author.</p>
+                                <ul>
+                                    <li><span class="text-bold">Vendor Tables:</span> $100.00 full price / $75.00 early bird</li>
+                                    <li><span class="text-bold">Author Tables:</span> $50.00 full price / $35.00 early bird</li>
+                                </ul>
+                                <p>Early bird pricing is available for vendors and authors who are accepted and submit payment of their table fee by 07/31/2026.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed px-3 px-lg-5" type="button" data-bs-toggle="collapse" data-bs-target="#vendorOrAuthor" aria-expanded="false" aria-controls="vendorOrAuthor">
+                            How do I know if I need a Vendor Table or an Author Table?
+                        </button>
+                    </h2>
+                    <div id="vendorOrAuthor" class="accordion-collapse collapse" data-bs-parent="#faqContainer">
+                        <div class="accordion-body">
+                            <div class="accordion-content px-3 px-lg-5 py-3">
+                                <p>If you are representing books you have written, we ask that you apply as an <a class="unformatted-link" href="#authorTables">author</a>.</p>
+                                <p>If you are a bookseller, literary organization, press/publisher, or similar, we ask that you apply as a <a class="unformatted-link" href="#vendorTables">vendor</a>.</p>
+                                <p class="mb-0">
+                                    A limited number of vendor tables may be available to appropriate authors. If you are interested in upgrading to a vendor table, please email us at
+                                    <a class="unformatted-link" href="mailto:hello@mvbookbazaar.com">hello@mvbookbazaar.com</a> upon your application's acceptance.
+                                </p>
                             </div>
                         </div>
                     </div>

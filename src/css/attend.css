@@ -117,6 +117,80 @@
     margin-left: 2rem;
 }
 
+#bookshelf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 10rem 0;
+}
+
+#bookshelf .title {
+    color: var(--accent);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#bookshelf .bookshelf-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50vh;
+    margin-top: 5rem;
+}
+
+#bookshelf .bookshelf-inner .book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 20vw;
+    transition: all 0.5s ease-in-out;
+}
+
+#bookshelf .bookshelf-inner .book img {
+    width: 100%;
+    height: auto;
+}
+
+#bookshelf .bookshelf-inner #resources,
+#bookshelf .bookshelf-inner #program,
+#bookshelf .bookshelf-inner #map {
+    position: relative;
+    z-index: 0;
+    left: 0;
+}
+
+#bookshelf .bookshelf-inner #resources {
+    top: 0rem;
+    left: 5rem;
+}
+
+#bookshelf .bookshelf-inner #resources:hover {
+    left: -5rem;
+}
+
+#bookshelf .bookshelf-inner #program {
+    z-index: 1;
+    top: -1rem;
+}
+
+#bookshelf .bookshelf-inner #program:hover {
+    left: -11rem;
+}
+
+#bookshelf .bookshelf-inner #map {
+    z-index: 2;
+    top: 1rem;
+    left: -5rem;
+}
+
+#bookshelf .bookshelf-inner #map:hover {
+    top: -3rem;
+}
+
 @media screen and (max-width: 992px) {
     #announcements .bogo .ticket.one,
     #announcements .bogo .ticket.two,
@@ -136,5 +210,33 @@
 
     #eventInfo.section-one p.inverted {
         font-size: 2rem;
+    }
+
+    #bookshelf {
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+
+    #bookshelf .title {
+        padding-bottom: 3rem;
+    }
+
+    #bookshelf .bookshelf-inner {
+        /* flex-direction: column; */
+        margin-top: 0rem;
+        height: 20vh;
+    }
+
+    #bookshelf .bookshelf-inner .book {
+        width: 30vw;
+    }
+
+    #bookshelf .bookshelf-inner #resources,
+    #bookshelf .bookshelf-inner #program,
+    #bookshelf .bookshelf-inner #map {
+        position: relative;
+        z-index: initial;
+        left: initial;
+        top: initial;
     }
 }

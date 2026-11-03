@@ -41,7 +41,7 @@ COLOR 8-For WACG Compliance: #874400;
 
     --primary: #4f4e57;
     --contrast: #fffbf7;
-    --secondary: #a7bbb8;
+    --secondary: #D5E1E9;
     --secondary-contrast: var(--black);
     --dark: var(--black);
     --accent: #edaa29;
@@ -890,11 +890,15 @@ sup {
 
 #thanks .thanks-list {
     font-family: var(--secondary-family);
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 100%; */
 }
+
+#thanks .thanks-list .thanks-item h3 {
+    color: var(--secondary);
+ }
 
 @media screen and (max-width: 992px) {
     #thanks {
@@ -918,8 +922,8 @@ sup {
 
     #thanks .thanks-list {
         margin-top: 3rem;
-        flex-direction: column;
-        align-items: flex-start;
+        /* flex-direction: column;
+        align-items: flex-start; */
     }
 }
 
