@@ -239,4 +239,12 @@
         left: initial;
         top: initial;
     }
+
+    #bookshelf .bookshelf-inner #resources:hover {
+        left: 0;
+    }
+
+    #bookshelf .bookshelf-inner #map:hover {
+        top: 0;
+    }
 }
