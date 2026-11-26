@@ -64,6 +64,7 @@
                 font-family: var(--secondary-family);
                 font-size: 1.15rem;
                 overflow-x: hidden;
+                transition: all 0.3s ease-in-out;
             }
 
             .primary-btn {
@@ -145,6 +146,31 @@
                 }
             }
 
+            /* *********** SCROLL INDICATOR *********** */
+            #scrollIndicator {
+                position: sticky;
+                top: calc(100% - 5rem);
+                left: calc(100% - 5rem);
+                height: 4rem;
+                width: 4rem;
+            }
+
+            #scrollIndicator .scroll-indicator-link {
+                height: 100%;
+                width: 100%;
+                display: block;
+                background-image: url("/assets/images/scrollDown_secondary.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            @media screen and (max-width: 992px) {
+                #scrollIndicator {
+                    display: none;
+                }
+            }
+
             /* *********** HEADER *********** */
 
             .header {
@@ -152,6 +178,12 @@
                 flex-direction: column;
                 min-height: 80vh;
                 padding: 1.15rem 4rem;
+            }
+
+            @media screen and (max-width: 992px) {
+                .header {
+                    min-height: initial;
+                }
             }
 
             /* ********** MAIN NAV ********** */
@@ -633,17 +665,21 @@
         </style>
     </head>
     <body id="home">
+        <div id="scrollIndicator">
+            <a class="scroll-indicator-link" href="#importantLinks" title="Click here for updates"></a>
+        </div>
         <!-- ---------- HEADER ---------- -->
         <header class="header container-fluid">
             <!-- ---------- MAIN NAV ---------- -->
-            <nav id="mainNav" class="main-nav navbar dark navbar-expand-md navbar-dark">
+            <!-- <nav id="mainNav" class="main-nav navbar dark navbar-expand-md navbar-dark">
                 <div class="navbar-brand">
                     <a class="nav-logo-container light" href="/"><img id="navLogoLight" class="nav-logo light img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                     <a class="nav-logo-container dark" href="/"><img id="navLogoDark" class="nav-logo dark img-fluid" src="/assets/images/MVBB_Logo.png" alt="Book Logo" /></a>
                 </div>
-            </nav>
+            </nav> -->
+
             <!-- ---------- HERO-BANNER ---------- -->
-            <div class="hero-banner row m-0 h-100 flex-column flex-grow-1">
+            <!-- <div class="hero-banner row m-0 h-100 flex-column flex-grow-1">
                 <div class="hero-banner-content col-12 px-4 p-md-0 h-100">
                     <div class="hero-image-container">
                         <h1>Mahoning Valley Book Bazaar</h1>
@@ -651,12 +687,29 @@
                         <p>We appreciate your patience while we bring you all the latest information.</p>
                     </div>
                 </div>
+            </div> -->
+            <div class="hero-banner row">
+                <div class="hero-banner-content col-12 px-0">
+                    <div class="hero-image-container">
+                        <img
+                            class="img-fluid d-none d-md-inline-block"
+                            src="/assets/images/MVBB_2026ThankYou.png"
+                            alt="Candid images of attendees and vendors at the inaugural Mahoning Valley Book Bazaar with the text 'Thank You! The inaugural Bazaar was a success because of you!' The word 'you' is underlined."
+                        />
+                        <img
+                            class="mt-3 img-fluid d-md-none"
+                            src="/assets/images/MVBB_2026ThankYou_mobile.png"
+                            alt="Candid images of attendees and vendors at the inaugural Mahoning Valley Book Bazaar with the text 'Thank You! The inaugural Bazaar was a success because of you!' The word 'you' is underlined."
+                        />
+                    </div>
+                </div>
             </div>
         </header>
 
-        <section id="importantLinks" class="contianer-fluid">
+        <!-- ---------- IMPORTANT LINKS ---------- -->
+        <section id="importantLinks" class="contianer-fluid mb-5">
             <div class="row row-cols-1 row-cols-md-2 g-5">
-                <div class="col my-md-3">
+                <!-- <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
                         <h5 class="card-title single-line pt-5 pt-md-0">Attend</h5>
                         <div class="card-body py-4 px-5">
@@ -667,12 +720,14 @@
                             <a class="primary-btn mb-5 d-inline-block" href="https://ticketscandy.com/e/mahoning-valley-book-bazaar-2026-17574" target="_blank">Buy Tickets</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title single-line pt-5 pt-md-0">Updates</h5>
+                        <!-- <h5 class="card-title single-line pt-5 pt-md-0">Updates</h5> -->
+                        <h5 class="card-title single-line pt-5 pt-md-0">We'll be back in 2027!</h5>
                         <div class="card-body py-4 px-5">
-                            <p class="card-subtitle pb-5">Be the first to know what's happening at the Bazaar.</p>
+                            <!-- <p class="card-subtitle pb-5">Be the first to know what's happening at the Bazaar.</p> -->
+                            <p class="card-subtitle text-center pb-5">Want to be the first to know the details?</p>
                         </div>
                         <div class="card-footer">
                             <a class="primary-btn mb-5 d-inline-block" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">Sign up for Updates!</a>
@@ -681,43 +736,17 @@
                 </div>
                 <div class="col my-md-3">
                     <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title single-line pt-5 pt-md-0">Authors</h5>
+                        <!-- <h5 class="card-title single-line pt-5 pt-md-0">Updates</h5> -->
+                        <h5 class="card-title single-line pt-5 pt-md-0">2026 Showcase</h5>
                         <div class="card-body py-4 px-5">
-                            <p class="card-subtitle pb-5">
-                                Although we've sold out of author tables, we'd love to meet you! Swing by the Bazaar to say hi or
-                                <a class="unformatted-link text-bold" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">sign up for updates</a> so you can be the first to know when applications open for the 2027 Bazaar.
-                            </p>
+                            <p class="card-subtitle text-center pb-5">While you wait for updates, check out the list of stellar authors and literary organizations we hosted at our 2026 Bazaar.</p>
                         </div>
                         <div class="card-footer">
-                            <!-- <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/FHZL3qWkoYE5WTQ97" target="_blank">Apply to Vend!</a> -->
-                            <div class="stamp-container">
-                                <img class="stamp img-fluid" src="/assets/images/soldoutstamp-dark.png" alt="sold out stamp in yellow-orange" />
-                            </div>
-                            <!-- <a class="primary-btn mb-5 d-inline-block disabled" href="#" target="_blank">Apply to Vend!</a> -->
+                            <a class="accent-btn mb-5 d-inline-block" href="/showcase/index.html" target="_blank">View Showcase</a>
                         </div>
                     </div>
                 </div>
-                <div class="col my-md-3">
-                    <div class="card h-100 p-2 py-md-5 px-md-4">
-                        <h5 class="card-title single-line pt-5 pt-md-0">
-                            Booksellers / <br class="d-md-none" />
-                            Bookish Orgs
-                        </h5>
-                        <div class="card-body py-4 px-5">
-                            <p class="card-subtitle pb-5">
-                                Although we've sold out of vendor tables, we'd love to learn more about you! Swing by the Bazaar to say hi or
-                                <a class="unformatted-link text-bold" href="https://stats.sender.net/forms/aKrVKl/view" target="_blank">sign up for updates</a> so you can be the first to know when applications open for the 2027 Bazaar.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <!-- <a class="primary-btn mb-5 d-inline-block" href="https://forms.gle/qorwBXp915RqeYfH8" target="_blank">Apply to Vend!</a> -->
-                            <!-- <a class="primary-btn mb-5 d-inline-block disabled" href="#" target="_blank">Apply to Vend!</a> -->
-                            <div class="stamp-container">
-                                <img class="stamp img-fluid" src="/assets/images/soldoutstamp-dark.png" alt="sold out stamp in yellow-orange" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Author/Vendor Apps have been moved to Components Library -->
             </div>
         </section>
 
@@ -744,6 +773,10 @@
             <div class="row pt-5 p-md-5">
                 <div class="info col-12 col-md-8">
                     <p class="tagline mb-5 mb-md-3">Mahoning Valley Book Bazaar</p>
+                    <p class="legal-links">
+                        <a class="unformatted-link" href="/privacy-policy/">Privacy Policy</a><span>&nbsp;|&nbsp; </span><a class="unformatted-link" href="/terms-of-use/">Terms of Use</a><span>&nbsp;|&nbsp; </span
+                        ><a class="unformatted-link" href="/sales-policy/">Sales & Refund Policy</a>
+                    </p>
                 </div>
                 <div class="connections col-12 col-md-4">
                     <div class="connections-inner">
